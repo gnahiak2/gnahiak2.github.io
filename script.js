@@ -1,95 +1,120 @@
-const GITHUB_USER = "gnahiak2";
-const PROJECT_LIMIT = 12;
+"use strict";
 
-const projectsGrid = document.getElementById("projects-grid");
 
-async function loadProjects() {
-    try {
-        const response = await fetch(
-            `https://api.github.com/users/${GITHUB_USER}/repos?sort=updated&direction=desc&per_page=${PROJECT_LIMIT}`
-        );
+/*
+ * Kaihang personal website
+ *
+ * GitHub repositories are loaded directly from
+ * the public GitHub API.
+ */
 
-        if (!response.ok) {
-            throw new Error(`GitHub returned ${response.status}`);
-        }
 
-        const repos = await response.json();
+const USERNAME = "gnahiak2";
 
-        const projects = repos
-            .filter(repo => !repo.fork)
-            .slice(0, PROJECT_LIMIT);
+const REPO_LIMIT = 12;
 
-        if (!projects.length) {
-            throw new Error("No public repositories found.");
-        }
+const API_URL =
+    `https://api.github.com/users/${USERNAME}/repos` +
+    `?sort=updated` +
+    `&direction=desc` +
+    `&per_page=${REPO_LIMIT}` +
+    `&type=owner`;
 
-        projectsGrid.innerHTML = projects
-            .map(repo => createProject(repo))
-            .join("");
 
-    } catch (error) {
-        console.error(error);
+const projectsGrid =
+    document.getElementById("projects-grid");
 
-        projectsGrid.innerHTML = `
-            <div class="loading">
-                Couldn't load GitHub projects.
-                <a
-                    href="https://github.com/${GITHUB_USER}"
-                    target="_blank"
-                    rel="noopener"
-                    style="color: var(--blue-light)"
-                >
-                    View GitHub →
-                </a>
-            </div>
-        `;
-    }
+const year =
+    document.getElementById("year");
+
+
+/*
+ * Escape GitHub-provided strings before inserting
+ * them into HTML.
+ */
+
+function escapeHTML(value) {
+
+    return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+
 }
 
 
-function createProject(repo) {
+/*
+ * Generate one project card.
+ */
+
+function createProjectHTML(repo) {
+
+    const name =
+        escapeHTML(repo.name);
+
     const description =
-        repo.description ||
-        "No description yet. Probably doing something interesting.";
+        escapeHTML(
+            repo.description ||
+            "No description yet. Probably doing something interesting."
+        );
 
     const language =
-        repo.language ||
-        "Various";
+        escapeHTML(
+            repo.language ||
+            "Various"
+        );
+
+    const stars =
+        Number(repo.stargazers_count) || 0;
+
+    const forks =
+        Number(repo.forks_count) || 0;
 
     return `
         <a
             class="project"
             href="${repo.html_url}"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
         >
 
             <div class="project-name">
-                ${escapeHtml(repo.name)}
+                ${name}
             </div>
 
             <p class="project-description">
-                ${escapeHtml(description)}
+                ${description}
             </p>
 
             <div class="project-meta">
 
                 <span class="language">
-                    <span class="language-dot"></span>
-                    ${escapeHtml(language)}
+
+                    <span
+                        class="language-dot"
+                        aria-hidden="true"
+                    ></span>
+
+                    ${language}
+
                 </span>
 
                 <span>
-                    ★ ${repo.stargazers_count}
+                    ★ ${stars}
                 </span>
 
                 <span>
-                    ${repo.forks_count} forks
+                    ${forks} forks
                 </span>
 
             </div>
 
-            <span class="project-arrow">
+            <span
+                class="project-arrow"
+                aria-hidden="true"
+            >
                 ↗
             </span>
 
@@ -98,17 +123,122 @@ function createProject(repo) {
 }
 
 
-function escapeHtml(value) {
-    return String(value)
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;");
+/*
+ * Display an error without leaving the loading
+ * state on screen forever.
+ */
+
+function showProjectError() {
+
+    projectsGrid.innerHTML = `
+        <div class="loading">
+
+            <span>
+                Couldn't load projects.
+            </span>
+
+            <a
+                href="https://github.com/${USERNAME}"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: var(--blue-light)"
+            >
+                View GitHub →
+            </a>
+
+        </div>
+    `;
+
 }
 
 
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+/*
+ * Fetch repositories from GitHub.
+ */
 
-loadProjects();
+async function loadProjects() {
+
+    try {
+
+        const response =
+            await fetch(API_URL, {
+                headers: {
+                    Accept:
+                        "application/vnd.github+json"
+                }
+            });
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                `GitHub API returned ${response.status}`
+            );
+
+        }
+
+
+        const repos =
+            await response.json();
+
+
+        /*
+         * Only show original repositories.
+         * Forks aren't useful as portfolio projects.
+         */
+
+        const projects =
+            repos
+                .filter(repo => !repo.fork)
+                .slice(0, REPO_LIMIT);
+
+
+        if (!projects.length) {
+
+            throw new Error(
+                "No public repositories found."
+            );
+
+        }
+
+
+        /*
+         * Generate all cards first, then perform
+         * one DOM update.
+         */
+
+        projectsGrid.innerHTML =
+            projects
+                .map(createProjectHTML)
+                .join("");
+
+
+    } catch (error) {
+
+        console.error(
+            "Failed to load GitHub projects:",
+            error
+        );
+
+        showProjectError();
+
+    }
+
+}
+
+
+/*
+ * Initialise the page.
+ */
+
+function init() {
+
+    year.textContent =
+        new Date().getFullYear();
+
+    loadProjects();
+
+}
+
+
+init();

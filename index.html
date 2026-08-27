@@ -2,91 +2,179 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kaihang — Developer</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <meta
         name="description"
-        content="Kaihang's personal website — software, embedded systems, infrastructure and random projects."
+        content="Kaihang — developer, hardware tinkerer, and professional builder of random things."
     >
+
+    <meta
+        name="theme-color"
+        content="#030812"
+    >
+
+    <title>Some Guy</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="background"></div>
+    <!--
+        Official Hack Club banner.
+        Source:
+        https://hackclub.com/brand
+    -->
 
-<header class="nav">
-    <a class="logo" href="/">kaihang<span>.</span></a>
+    <a href="https://hackclub.com/"><img style="position: absolute; top: 0; left: 10px; border: 0; width: 256px; z-index: 999;" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"/></a>
 
-    <nav>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#stack">Stack</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <!-- Background -->
 
-
-<main>
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <div class="hero-text">
-
-            <div class="status">
-                <span class="status-dot"></span>
-                building things
-            </div>
-
-            <p class="eyebrow">HELLO, I'M</p>
-
-            <h1>
-                Kaihang<span>.</span>
-            </h1>
-
-            <p class="subtitle">
-                Developer, hardware tinkerer,
-                server enjoyer and professional
-                builder of random stuff.
-            </p>
-
-            <div class="buttons">
-
-                <a href="#projects" class="button primary">
-                    View projects
-                </a>
-
-                <a
-                    href="https://github.com/gnahiak2"
-                    target="_blank"
-                    rel="noopener"
-                    class="button secondary"
-                >
-                    GitHub ↗
-                </a>
-
-            </div>
-
-        </div>
+    <div class="background" aria-hidden="true"></div>
 
 
-        <div class="terminal">
+    <!-- Navigation -->
 
-            <div class="terminal-bar">
-                <div class="terminal-dots">
-                    <i></i>
-                    <i></i>
-                    <i></i>
+    <header class="nav">
+
+        <a
+            href="#"
+            class="logo"
+            aria-label="Kaihang home"
+        >
+            kaihang<span>.</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#stack">
+                Stack
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <div class="status-row">
+
+                    <div class="status">
+                        <span
+                            class="status-dot"
+                            aria-hidden="true"
+                        ></span>
+
+                        building things
+                    </div>
+
+                    <a
+                        class="hackclub-badge"
+                        href="https://hackclub.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="https://assets.hackclub.com/icon-rounded.svg"
+                            alt=""
+                        >
+
+                        Hack Club
+                    </a>
+
                 </div>
 
-                <span>kaihang@dev</span>
+
+                <p class="eyebrow">
+                    HELLO, I'M
+                </p>
+
+
+                <h1>
+                    Kaihang<span>.</span>
+                </h1>
+
+
+                <p class="subtitle">
+                    Developer, hardware tinkerer,
+                    server enjoyer and professional
+                    builder of random stuff.
+                </p>
+
+
+                <div class="buttons">
+
+                    <a
+                        href="#projects"
+                        class="button primary"
+                    >
+                        View projects
+                    </a>
+
+                    <a
+                        href="https://github.com/gnahiak2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button secondary"
+                    >
+                        GitHub ↗
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="terminal-body">
+
+            <!-- Terminal -->
+
+            <div
+                class="terminal"
+                aria-label="Terminal showing Kaihang's interests"
+            >
+
+                <div class="terminal-bar">
+
+                    <div
+                        class="terminal-dots"
+                        aria-hidden="true"
+                    >
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+
+                    <span>
+                        kaihang@dev
+                    </span>
+
+                </div>
+
+
+                <div class="terminal-body">
 
 <pre><span class="dim">$</span> whoami
 
@@ -108,172 +196,262 @@ Making random things
 
 <span class="dim">$</span> _</pre>
 
+                </div>
+
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- PROJECTS -->
+        <!-- PROJECTS -->
 
-    <section id="projects" class="section">
+        <section
+            id="projects"
+            class="section"
+        >
 
-        <div class="section-header">
+            <div class="section-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        FROM MY GITHUB
+                    </p>
+
+                    <h2>
+                        Projects
+                    </h2>
+
+                </div>
+
+
+                <a
+                    href="https://github.com/gnahiak2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-all"
+                >
+                    View GitHub →
+                </a>
+
+            </div>
+
+
+            <div
+                id="projects-grid"
+                class="projects-grid"
+                aria-live="polite"
+            >
+
+                <div class="loading">
+
+                    <div
+                        class="loader"
+                        aria-hidden="true"
+                    ></div>
+
+                    Loading projects...
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section
+            id="about"
+            class="section about"
+        >
+
+            <p class="eyebrow">
+                ABOUT
+            </p>
+
+
+            <h2>
+                I like knowing<br>
+                <span>how things work.</span>
+            </h2>
+
+
+            <div class="about-text">
+
+                <p>
+                    I'm Kaihang, a developer who likes
+                    experimenting with software, hardware,
+                    servers and pretty much anything that
+                    looks interesting.
+                </p>
+
+
+                <p>
+                    Most projects start with
+                    <strong>"I wonder if I could..."</strong>
+                    and somehow turn into a working prototype.
+                </p>
+
+            </div>
+
+
+            <!-- Hack Club -->
+
+            <a
+                href="https://hackclub.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hackclub-about"
+            >
+
+                <img
+                    src="https://assets.hackclub.com/icon-rounded.svg"
+                    alt=""
+                >
+
+                <div>
+
+                    <p class="hackclub-label">
+                        HACK CLUB
+                    </p>
+
+                    <p>
+                        I'm part of Hack Club — a community
+                        for young people who build things
+                        with code, hardware and curiosity.
+                    </p>
+
+                </div>
+
+            </a>
+
+        </section>
+
+
+        <!-- STACK -->
+
+        <section
+            id="stack"
+            class="section"
+        >
+
+            <p class="eyebrow">
+                TOOLS
+            </p>
+
+            <h2>
+                Stack
+            </h2>
+
+
+            <div class="stack">
+
+                <span>Rust</span>
+                <span>TypeScript</span>
+                <span>Python</span>
+                <span>Bash</span>
+                <span>ESP32</span>
+                <span>Linux</span>
+                <span>macOS</span>
+                <span>Git</span>
+                <span>Podman</span>
+                <span>Docker</span>
+                <span>Cloudflare</span>
+                <span>Nginx</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- VIBECODE -->
+
+        <section class="vibe">
+
+            <div
+                class="vibe-icon"
+                aria-hidden="true"
+            >
+                ⚡
+            </div>
+
+
             <div>
-                <p class="eyebrow">FROM MY GITHUB</p>
-                <h2>Projects</h2>
+
+                <p class="vibe-title">
+                    Vibecoded.
+                </p>
+
+                <p class="vibe-text">
+                    This website was built with AI assistance.
+                    A <strong>non-vibecoded project</strong>
+                    is on the way. 👀
+                </p>
+
             </div>
 
-            <a
-                href="https://github.com/gnahiak2"
-                target="_blank"
-                rel="noopener"
-                class="view-all"
-            >
-                View GitHub →
-            </a>
-        </div>
+        </section>
 
 
-        <div id="projects-grid" class="projects-grid">
+        <!-- CONTACT -->
 
-            <div class="loading">
-                <div class="loader"></div>
-                Loading projects...
+        <section
+            id="contact"
+            class="section contact"
+        >
+
+            <p class="eyebrow">
+                FIND ME
+            </p>
+
+
+            <h2>
+                Let's build<br>
+                something.
+            </h2>
+
+
+            <div class="contact-links">
+
+                <a
+                    href="https://github.com/gnahiak2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub ↗
+                </a>
+
+                <a href="mailto:hello@gnahiak2.dev">
+                    Email ↗
+                </a>
+
             </div>
 
-        </div>
+        </section>
 
-    </section>
-
-
-    <!-- ABOUT -->
-
-    <section id="about" class="section about">
-
-        <p class="eyebrow">ABOUT</p>
-
-        <h2>
-            I like knowing<br>
-            <span>how things work.</span>
-        </h2>
-
-        <div class="about-text">
-
-            <p>
-                I'm Kaihang, a developer who likes experimenting
-                with software, hardware, servers and anything
-                that looks interesting.
-            </p>
-
-            <p>
-                Most projects start with
-                <strong>"I wonder if I could..."</strong>
-                and somehow turn into a working prototype.
-            </p>
-
-        </div>
-
-    </section>
+    </main>
 
 
-    <!-- STACK -->
+    <!-- FOOTER -->
 
-    <section id="stack" class="section">
+    <footer>
 
-        <p class="eyebrow">TOOLS</p>
+        <span>
+            © <span id="year"></span> Kaihang
+        </span>
 
-        <h2>Stack</h2>
+        <span>
+            Built with HTML, CSS & questionable decisions.
+        </span>
 
-        <div class="stack">
-
-            <span>Rust</span>
-            <span>TypeScript</span>
-            <span>Python</span>
-            <span>Bash</span>
-            <span>ESP32</span>
-            <span>Linux</span>
-            <span>macOS</span>
-            <span>Git</span>
-            <span>Podman</span>
-            <span>Docker</span>
-            <span>Cloudflare</span>
-            <span>Nginx</span>
-
-        </div>
-
-    </section>
+    </footer>
 
 
-    <!-- VIBECODE NOTE -->
-
-    <section class="vibe">
-
-        <div class="vibe-icon">
-            ⚡
-        </div>
-
-        <div>
-            <p class="vibe-title">
-                Vibecoded.
-            </p>
-
-            <p class="vibe-text">
-                This website was built with AI assistance.
-                A <strong>non-vibecoded project</strong> is on the way. 👀
-            </p>
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-
-    <section id="contact" class="section contact">
-
-        <p class="eyebrow">FIND ME</p>
-
-        <h2>
-            Let's build<br>
-            something.
-        </h2>
-
-        <div class="contact-links">
-
-            <a
-                href="https://github.com/gnahiak2"
-                target="_blank"
-                rel="noopener"
-            >
-                GitHub ↗
-            </a>
-
-            <a href="mailto:hello@gnahiak2.dev">
-                Email ↗
-            </a>
-
-        </div>
-
-    </section>
-
-</main>
-
-
-<footer>
-
-    <span>
-        © <span id="year"></span> Kaihang
-    </span>
-
-    <span>
-        Built with HTML, CSS & questionable decisions.
-    </span>
-
-</footer>
-
-
-<script src="script.js"></script>
+    <script
+        src="script.js"
+        defer
+    ></script>
 
 </body>
 </html>
