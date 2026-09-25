@@ -763,120 +763,6 @@ img {
 }
 
 
-/* FEATURED GAME */
-
-.featured {
-    border-top:
-        1px solid var(--border);
-}
-
-
-.featured-card {
-    display: grid;
-
-    grid-template-columns:
-        1fr
-        0.85fr;
-
-    align-items: center;
-
-    gap: 50px;
-
-    margin-top: 45px;
-
-    padding: 34px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 13px;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(10, 23, 40, 0.9),
-            rgba(5, 12, 22, 0.9)
-        );
-
-    transition:
-        transform 250ms ease,
-        border-color 250ms ease,
-        box-shadow 250ms ease;
-}
-
-
-.featured-card:hover {
-    transform:
-        translateY(-5px);
-
-    border-color:
-        var(--border-hover);
-
-    box-shadow:
-        0 20px 50px
-        rgba(0, 0, 0, 0.25);
-}
-
-
-.featured-tag {
-    color: var(--blue-light);
-
-    font-family: monospace;
-    font-size: 11px;
-
-    letter-spacing: 0.1em;
-}
-
-
-.featured-text {
-    max-width: 520px;
-
-    margin-top: 14px;
-
-    color: var(--muted);
-
-    font-size: 15px;
-}
-
-
-.featured-button {
-    display: inline-block;
-
-    margin-top: 24px;
-}
-
-
-.featured-terminal {
-    overflow: hidden;
-
-    padding: 22px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 11px;
-
-    background:
-        rgba(5, 13, 24, 0.9);
-}
-
-
-.featured-terminal pre {
-    color: #b8c8da;
-
-    font-family:
-        "SFMono-Regular",
-        Consolas,
-        monospace;
-
-    font-size: 12px;
-
-    line-height: 1.8;
-
-    white-space: pre-wrap;
-}
-
-
 /* LOADING */
 
 .loading {
@@ -1289,15 +1175,6 @@ footer {
 
     .projects-grid {
         grid-template-columns: 1fr;
-    }
-
-
-    .featured-card {
-        grid-template-columns: 1fr;
-
-        gap: 26px;
-
-        padding: 24px;
     }
 
 
