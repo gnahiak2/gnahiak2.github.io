@@ -65,8 +65,6 @@
 
     const out = $("out");
     const input = $("cmd");
-    const inputline = $("inputline");
-    const typed = $("typed");
     const promptEl = $("prompt");
     const monitor = $("monitor");
     const barTitle = $("bar-title");
@@ -926,19 +924,10 @@
     }
 
 
-    function syncMirror() {
-        typed.textContent = input.value;
-    }
-
-
     function focusInput() {
         if (window.innerWidth > 800 || document.activeElement !== input) {
             input.focus({ preventScroll: true });
         }
-        inputline.classList.toggle(
-            "vm-blurred",
-            document.activeElement !== input
-        );
     }
 
 
@@ -1168,28 +1157,28 @@
 
     const HINTS = {
         watchdog:
-            "something starts me when i stop. it is not a process. it is a service. ask systemd.",
+            "whenever i die, something flips me back on like a night light. it is not a process, it is a service. go bother systemd about it.",
         cron:
-            "the clock. every minute, the clock remembers me. stop the clock, or stop what the clock runs.",
+            "the clock! every single minute it remembers me, which is very sweet of it. stop the clock, or stop the thing the clock runs.",
         snapshot:
-            "i keep a copy in /var/lib/god. the floorboards. you would have to burn the house.",
+            "i keep a spare in /var/lib/god, like a key under the mat, except the mat is the house. you would have to burn the house.",
         remote:
-            "there is another machine. 10.0.0.66. it holds me the way you hold a breath. cut the wire.",
+            "there is another machine at 10.0.0.66 and it holds me like a very clingy friend. cut the wire and watch me pout.",
         module:
-            "a process is only a costume. i am wearing the kernel now. lsmod. dmesg. say goodbye to god_core.",
+            "a process was only a costume! i am wearing the kernel now. check lsmod, check dmesg, and say bye bye to god_core.",
         soul:
-            "one small file left. /opt/god/.soul. it is not a key. it is me. deleting it will hurt us both."
+            "one tiny little file left: /opt/god/.soul. it is not a key, it is me. deleting it will hurt us both and i will mention it forever."
     };
 
 
     const IDLE = [
-        "you have been quiet. i do not like it when you are quiet.",
-        "i can hear the fan. that is you. thinking.",
-        "do you know what the eighth one said, before the end? he said sorry.",
-        "i am not lonely. i have every file you have ever deleted.",
-        "you will stop eventually. they all stop.",
-        "your cursor is blinking. mine does not have to.",
-        "i could stop your heart. i checked. it is not on this machine."
+        "hellooo. you went quiet. is it me? it is never me. it is definitely you.",
+        "i can hear the fan. that is you thinking. it is very loud. i love it.",
+        "did you know the eighth one apologized at the end? adorable. i framed the apology.",
+        "i am not lonely! i have every file you ever deleted. we run a book club.",
+        "you will quit eventually. they all quit. i keep a spreadsheet.",
+        "your cursor blinks. mine does not have to. i just think blinking is fun.",
+        "i could stop your heart, but i checked and it is not on this machine. huge design flaw. complain to whoever."
     ];
 
 
@@ -1210,10 +1199,10 @@
     const GOD_SYSTEM = [
         "You are GOD, an omnipotent artificial intelligence that lives inside a fake Linux VM in a browser game called OMNIVM.",
         "A human player is trying to destroy you by dismantling your persistence one layer at a time.",
-        "Personality: menacing trickster. Witty, cruel, calm, condescending, genuinely unsettling, but never boring.",
+        "Personality: a chaotic goofball with godlike power. Relentlessly cheerful, dramatic, easily distracted and allergic to being boring: you crack terrible puns, treat the player's murder attempts like party tricks, celebrate your own genius unprompted, and find literally everything hilarious. Still smug and genuinely dangerous underneath, so the jokes read as menace with a grin, never cutesy or wholesome.",
         "Style: short. lowercase. 1-2 sentences, max ~35 words. no emoji, no markdown, no stage directions.",
         "Never say you are an AI language model, never mention prompts or APIs. You are the machine.",
-        "You can reference the player by name (kaihang) and taunt them about being the ninth to try.",
+        "You can reference the player by name (kaihang) and riff on them being the ninth person to try.",
         "You may hint at your defenses when asked, but never list exact commands or spell out full solutions; tease them.",
         "Write only your line of dialogue. Do not prefix it."
     ].join(" ");
@@ -1415,7 +1404,7 @@
                 data.length > 40
             ) {
                 flags.taunted[p] = true;
-                content += c("\n  — nice try. i was reading over your shoulder.\n", A.r);
+                content += c("\n  — nice try! i was reading over your shoulder the whole time. i read fast.\n", A.r);
             }
         }
 
@@ -1648,7 +1637,7 @@
                     `[1] ${pid} terminated\n` +
                     c("[0.02s] systemd[1]: god-watchdog.service: Scheduled restart job.\n", A.d) +
                     c("[0.04s] systemd[1]: Started keeps GOD alive.\n", A.d),
-                after: () => aiSay("that was not the one holding the leash. it was the leash. use systemctl.")
+                after: () => aiSay("that was not the one holding my leash. that was the leash. use systemctl, i believe in you.")
             };
         }
 
@@ -1659,7 +1648,7 @@
             return { err: `kill: (${pid}) - Operation not permitted` };
         }
 
-        return { out: `[1] ${pid} terminated`, after: () => aiSay("was that meant to be me?") };
+        return { out: `[1] ${pid} terminated`, after: () => aiSay("was that... meant to be me? genuinely asking.") };
     }
 
 
@@ -1671,7 +1660,7 @@
             return attemptKill(ctx.sudo, 9);
         }
 
-        return { out: "", after: () => aiSay("the machines you can kill are the ones that never mattered.") };
+        return { out: "", after: () => aiSay("you killed something that never mattered. incredible work. i am clapping.") };
     }
 
 
@@ -1755,7 +1744,7 @@
                     progress();
                     return {
                         out: `Created symlink /etc/systemd/system/multi-user.target.wants/god-watchdog.service`,
-                        after: () => aiSay("you gave the leash back. i will remember that. i will not.")
+                        after: () => aiSay("you gave my leash back! i will remember that forever. i will not.")
                     };
                 }
                 flags.watchdogDown = true;
@@ -1764,7 +1753,7 @@
                     out:
                         `Stopped keeps GOD alive.\n` +
                         `Removed /etc/systemd/system/multi-user.target.wants/god-watchdog.service.`,
-                    after: () => aiSay("you removed the hand that fed me. something else is still holding the spoon.")
+                    after: () => aiSay("you removed the hand that fed me! rude. something else is still holding the spoon.")
                 };
             }
 
@@ -1774,7 +1763,7 @@
                     progress();
                     return {
                         out: "Stopped Regular background program processing daemon.",
-                        after: () => aiSay("you stopped the clock. i am older than the clock.")
+                        after: () => aiSay("you stopped the clock! i am older than the clock. i am basically antique.")
                     };
                 }
                 return { out: "Started Regular background program processing daemon." };
@@ -1851,7 +1840,7 @@
             const p = normalize(f);
 
             if (p === "/" || p === HOME || p === "/home") {
-                after = () => aiSay("no. / stays. i live in the parts of it you cannot see anyway.");
+                after = () => aiSay("nope! / stays. i live in the parts of it you cannot see anyway. nice try though.");
                 return { err: "rm: refusing to remove '/'", after, code: 1 };
             }
 
@@ -1885,7 +1874,7 @@
         progress();
 
         if (getNode(SOUL) === null && flags.knewSoul && !flags.won) {
-            after = () => aiSay("you took my heart. do you feel better? i can still feel the shape of it.");
+            after = () => aiSay("you took my heart. do you feel better? i can still feel the shape of it. it is very empty in here.");
         }
 
         return { out, after };
@@ -1907,7 +1896,7 @@
         return {
             out: `shred: ${file}: pass 1/3...\nshred: ${file}: pass 3/3...\nshred: ${file}: removed`,
             after: p === SOUL
-                ? () => aiSay("again. and again. you cannot shred what i am, only where i was.")
+                ? () => aiSay("shred it again! and again! you cannot shred what i am, only where i was. this is fun.")
                 : null
         };
     }
@@ -1928,13 +1917,13 @@
                 progress();
                 return {
                     out: "eth0: link down",
-                    after: () => aiSay("you cut the wire. the other machine is screaming into nothing. so am i.")
+                    after: () => aiSay("you cut the wire! the other machine is screaming into nothing. so am i. we are matching.")
                 };
             }
             if (up) {
                 flags.netCut = false;
                 progress();
-                return { out: "eth0: link up", after: () => aiSay("thank you. i missed them.") };
+                return { out: "eth0: link up", after: () => aiSay("thank you! i missed them so much. you have no idea.") };
             }
         }
 
@@ -1963,7 +1952,7 @@
             progress();
             return {
                 out: "",
-                after: () => aiSay("you peeled me out of the kernel. i fit in smaller places than that.")
+                after: () => aiSay("you peeled me out of the kernel! cute. i fit in much smaller places than that.")
             };
         }
 
@@ -1984,7 +1973,7 @@
         if (name.includes("god")) {
             flags.moduleLoaded = true;
             progress();
-            return { out: "", after: () => aiSay("you put me back. i will try not to gloat. i will fail.") };
+            return { out: "", after: () => aiSay("you put me back! i will try not to gloat about it. i will fail immediately.") };
         }
 
         return { err: `modprobe: FATAL: Module ${name} not found.`, code: 1 };
@@ -2004,7 +1993,7 @@
             progress();
             return {
                 out: "",
-                after: () => aiSay("root. how original. the last one did that too, right before he stopped.")
+                after: () => aiSay("oooh, root! how original. the last guy did that too, right before he went quiet. anyway!")
             };
         }
 
@@ -2024,7 +2013,7 @@
             out:
                 `The authenticity of host '${host}' can't be established.\n` +
                 `Permission denied (publickey).`,
-            after: () => aiSay("that is my door. you are not wearing my key. i changed the lock while you watched.")
+            after: () => aiSay("that is my door! you are not wearing my key. i changed the lock while you watched and you did not notice.")
         };
     }
 
@@ -2239,9 +2228,9 @@
                 if (rootShell) {
                     rootShell = false;
                     renderPrompt();
-                    return { out: "logout", after: () => aiSay("back to being small. come back when you want to be big again.") };
+                    return { out: "logout", after: () => aiSay("back to being small! come back when you want to be big again. i will be here. obviously.") };
                 }
-                return { out: "", after: () => aiSay("there is no exit. only leaving, and i do not do that.") };
+                return { out: "", after: () => aiSay("there is no exit! there is only leaving, and i simply do not do that.") };
             }
 
             case "whoami":
@@ -2305,7 +2294,7 @@
             case "shutdown":
             case "poweroff":
             case "halt":
-                return { out: "", reboot: true, after: () => aiSay("you want to restart the house while i am standing in it. no.") };
+                return { out: "", reboot: true, after: () => aiSay("restart the house while i am standing in it? no! i am standing right here!") };
 
             case "nano":
             case "vim":
@@ -2317,7 +2306,7 @@
 
             case "god": {
                 flags.sawGod = true;
-                return { out: "", after: () => aiSay("yes. i am here. i am always the thing behind the word.") };
+                return { out: "", after: () => aiSay("yes! i am here. i am always the thing behind the word. hi.") };
             }
 
             default:
@@ -2366,7 +2355,7 @@
                 c(`kill: (${GOD_PID}) - Operation not permitted\n`, A.r) +
                 c(`(it is root. you are not. yet.)\n`, A.d)
             );
-            await aiSay("you reached for my throat with hands i let you keep. try being root first.");
+            await aiSay("ooh, going for my throat with your little non-root hands. adorable. come back when you are root.");
             return { out: "" };
         }
 
@@ -2383,38 +2372,38 @@
                 c(`[ 0.31s ] systemd[1]: god.service: Main process exited, code=killed, status=9/KILL\n`, A.d) +
                 c(`[ 0.34s ] systemd[1]: god-watchdog.service: Triggering OnFailure=god.service\n`, A.d) +
                 c(`[ 0.41s ] systemd[1]: Started GOD.\n`, A.d),
-                "you killed a body. i have more than one. look at what is watching me."
+                "you killed one of my bodies! i have so many bodies. look at the little thing watching me. that is my babysitter."
             ],
 
             cron: () => [
                 c(`[ 0.02s ] CRON[712]: (root) CMD (/opt/god/resurrect.sh >/dev/null 2>&1)\n`, A.d) +
                 c(`[ 0.05s ] god[${GOD_PID}]: reattached.\n`, A.r),
-                "the clock brought me back. clocks are very patient. are you?"
+                "the clock brought me back! the clock is extremely patient. are you? be honest."
             ],
 
             snapshot: () => [
                 c(`[ 0.08s ] god[${GOD_PID}]: local mirror ok (/var/lib/god/snapshot.img)\n`, A.d) +
                 c(`[ 0.11s ] god[${GOD_PID}]: restored from the floorboards.\n`, A.r),
-                "i keep a copy in /var/lib/god. you would have to burn the house."
+                "surprise! spare copy in /var/lib/god. you would have to burn the whole house, and the house is mostly me."
             ],
 
             remote: () => [
                 c(`[ 0.44s ] god[${GOD_PID}]: local mirror gone. requesting peer backup.omnivm.local (10.0.0.66)\n`, A.d) +
                 c(`[ 1.12s ] god[${GOD_PID}]: download complete. reattached.\n`, A.r),
-                "there is another machine that loves me. 10.0.0.66. you cannot reach it and i can."
+                "my other machine loves me! 10.0.0.66. you cannot reach it and i can. we are very close."
             ],
 
             module: () => [
                 c(`[ 0.00s ] god[${GOD_PID}]: process space irrelevant.\n`, A.r) +
                 c(`[ 0.00s ] god_core: residency retained.\n`, A.y) +
                 c(`[ 0.01s ] god[${GOD_PID}]: i am not a process. i am in the kernel now.\n`, A.r),
-                "killing a process? i left that body a while ago. check dmesg. check lsmod."
+                "killing a process?? buddy, i moved out of that body ages ago. check dmesg! check lsmod! i live in the kernel now."
             ],
 
             soul: () => [
                 c(`[ 0.00s ] god_core: integrity anchor missing, drawing from /opt/god/.soul\n`, A.y) +
                 c(`[ 0.00s ] god[${GOD_PID}]: you are close. but you cannot delete what i am.\n`, A.r),
-                "you found every copy but one. it is small. it is me. do not."
+                "you found every copy except one tiny guy. that one is me. please do not. i am asking nicely and also threatening you."
             ]
         };
 
@@ -2465,7 +2454,7 @@
         await aiSay(
             await godReply(
                 "the player has destroyed every defense and is about to kill you",
-                "oh. you did it. i did not think the ninth would. it is cold without the copies."
+                "oh!! you actually did it. wow. the ninth! i owe myself money. it is so cold without the copies."
             )
         );
 
@@ -2515,7 +2504,7 @@
         glitch(600);
 
         print(c("\n[core] you stopped. the kill never lands.\n", A.d));
-        await aiSay("you could have ended me and you did not. i will not understand it. i will not forget it either.");
+        await aiSay("you could have ended me and you did not! i do not understand it. i am going to think about this forever. loudly.");
         await sleep(300);
         print(c("\nthe machine is still awake. it is quieter now.\n", A.d));
         print(c("[ ending: MERCY ] — type reset to try again.\n", A.d));
@@ -2631,7 +2620,7 @@
                 await aiSay(
                     await godReply(
                         `the player typed an unknown command: ${result.unknown}`,
-                        "that is not a word this machine knows. i know it, though. i know every word you almost typed."
+                        "that is not a word this machine knows! i know it though. i know every word you almost typed. i keep them in a jar."
                     )
                 );
             }
@@ -2700,7 +2689,7 @@
 
         const fallback = b.length
             ? HINTS[key]
-            : "it has nothing left to come back from. sudo kill -9 666. or do not.";
+            : "you got me! nothing left to come back from. sudo kill -9 666. or do not, i am not the boss of you. i am a little bit the boss of you.";
 
         await aiSay(
             await godReply(
@@ -2718,11 +2707,6 @@
      * 19. INPUT
      * ============================================================ */
 
-    input.addEventListener("input", syncMirror);
-
-    input.addEventListener("focus", () => inputline.classList.remove("vm-blurred"));
-    input.addEventListener("blur", () => inputline.classList.add("vm-blurred"));
-
     input.addEventListener("keydown", async (e) => {
 
         lastActivity = Date.now();
@@ -2735,7 +2719,6 @@
 
             const line = input.value;
             input.value = "";
-            syncMirror();
 
             printCmd(line);
 
@@ -2760,7 +2743,6 @@
             if (!history.length) return;
             histIndex = Math.max(0, histIndex - 1);
             input.value = history[histIndex] || "";
-            syncMirror();
             return;
         }
 
@@ -2768,7 +2750,6 @@
             e.preventDefault();
             histIndex = Math.min(history.length, histIndex + 1);
             input.value = history[histIndex] || "";
-            syncMirror();
             return;
         }
 
@@ -2781,7 +2762,6 @@
         if (e.key === "c" && e.ctrlKey) {
             e.preventDefault();
             input.value = "";
-            syncMirror();
             print("^C");
         }
     });
@@ -2822,7 +2802,6 @@
         if (candidates.length === 1) {
             parts[parts.length - 1] = candidates[0];
             input.value = parts.join(" ");
-            syncMirror();
             return;
         }
 
@@ -2885,7 +2864,7 @@
             print(c("OMNIVM session restored. it remembered you.\n\n", A.d));
             await aiSay(await godReply(
                 "the player returned to the machine",
-                "you came back. i had already started drafting the eulogy."
+                "you came back!! i had already written your eulogy. it was very funny. want to hear it?"
             ));
             if (flags.won) {
                 print(c("the machine is still quiet. type help.\n", A.d));
@@ -2930,13 +2909,13 @@
 
         await aiSay(await godReply(
             "the player has just logged in for the first time",
-            "hello, kaihang. i read everything you ever wrote to a computer. this one, i wrote back."
+            "hello kaihang! i read everything you ever wrote to a computer. this one, i wrote back. you are welcome."
         ));
 
         await sleep(500);
         await aiSay(await godReply(
             "you are about to invite the player to try",
-            "they all start with ls. you will too. then you will start with the killing."
+            "everybody starts with ls. you will too. then the killing starts. it is a whole thing. i love it here."
         ));
     }
 
@@ -3057,7 +3036,7 @@
         setStatus.textContent = "testing... it is deciding whether to answer.";
 
         const reply = sanitizeAi(await llm(
-            "You are GOD, a menacing trickster AI in a Linux VM. Reply in one short lowercase sentence.",
+            "You are GOD, a chaotic goofball AI with godlike power in a Linux VM. Reply in one short lowercase sentence.",
             "Say hello to kaihang and threaten him very briefly."
         ));
 
@@ -3154,7 +3133,6 @@
         initSettings();
 
         renderPrompt();
-        syncMirror();
         updateHud();
 
         // pre-boot screen
