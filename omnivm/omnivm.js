@@ -65,8 +65,6 @@
 
     const out = $("out");
     const input = $("cmd");
-    const inputline = $("inputline");
-    const typed = $("typed");
     const promptEl = $("prompt");
     const monitor = $("monitor");
     const barTitle = $("bar-title");
@@ -926,19 +924,10 @@
     }
 
 
-    function syncMirror() {
-        typed.textContent = input.value;
-    }
-
-
     function focusInput() {
         if (window.innerWidth > 800 || document.activeElement !== input) {
             input.focus({ preventScroll: true });
         }
-        inputline.classList.toggle(
-            "vm-blurred",
-            document.activeElement !== input
-        );
     }
 
 
@@ -2718,11 +2707,6 @@
      * 19. INPUT
      * ============================================================ */
 
-    input.addEventListener("input", syncMirror);
-
-    input.addEventListener("focus", () => inputline.classList.remove("vm-blurred"));
-    input.addEventListener("blur", () => inputline.classList.add("vm-blurred"));
-
     input.addEventListener("keydown", async (e) => {
 
         lastActivity = Date.now();
@@ -2735,7 +2719,6 @@
 
             const line = input.value;
             input.value = "";
-            syncMirror();
 
             printCmd(line);
 
@@ -2760,7 +2743,6 @@
             if (!history.length) return;
             histIndex = Math.max(0, histIndex - 1);
             input.value = history[histIndex] || "";
-            syncMirror();
             return;
         }
 
@@ -2768,7 +2750,6 @@
             e.preventDefault();
             histIndex = Math.min(history.length, histIndex + 1);
             input.value = history[histIndex] || "";
-            syncMirror();
             return;
         }
 
@@ -2781,7 +2762,6 @@
         if (e.key === "c" && e.ctrlKey) {
             e.preventDefault();
             input.value = "";
-            syncMirror();
             print("^C");
         }
     });
@@ -2822,7 +2802,6 @@
         if (candidates.length === 1) {
             parts[parts.length - 1] = candidates[0];
             input.value = parts.join(" ");
-            syncMirror();
             return;
         }
 
@@ -3154,7 +3133,6 @@
         initSettings();
 
         renderPrompt();
-        syncMirror();
         updateHud();
 
         // pre-boot screen
