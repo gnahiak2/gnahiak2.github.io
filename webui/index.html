@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A self-hosted-style chat interface for a lot of providers — bring your own key."
+    >
+
+    <meta
+        name="theme-color"
+        content="#030812"
+    >
+
+    <title>WebUI — kaihang</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="webui.css">
+</head>
+
+<body class="webui-body">
+
+    <div class="background" aria-hidden="true"></div>
+
+
+    <div class="webui" id="webui">
+
+        <!-- SIDEBAR -->
+
+        <aside class="webui-side" id="side">
+
+            <div class="webui-side-head">
+
+                <a class="webui-brand" href="../">
+                    kaihang<span>.</span>
+                    <em>webui</em>
+                </a>
+
+                <button
+                    class="webui-new"
+                    id="new-chat"
+                    type="button"
+                >
+                    <span aria-hidden="true">＋</span>
+                    New chat
+                </button>
+
+            </div>
+
+
+            <nav
+                class="webui-chats"
+                id="chats"
+                aria-label="Conversations"
+            ></nav>
+
+
+            <div class="webui-side-foot">
+
+                <button
+                    class="webui-connect"
+                    id="connect-btn"
+                    type="button"
+                >
+                    <span class="webui-connect-dot" id="connect-dot"></span>
+                    <span class="webui-connect-text" id="connect-text">no model linked</span>
+                </button>
+
+                <a class="webui-back" href="../">
+                    ← back to site
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN -->
+
+        <main class="webui-main">
+
+            <header class="webui-top">
+
+                <button
+                    class="webui-icon"
+                    id="toggle-side"
+                    type="button"
+                    aria-label="Toggle sidebar"
+                >☰</button>
+
+                <div class="webui-model-wrap">
+
+                    <button
+                        class="webui-model-btn"
+                        id="model-btn"
+                        type="button"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                    >
+                        <span class="webui-model-name" id="model-name">no model</span>
+                        <span class="webui-model-provider" id="model-provider"></span>
+                        <span aria-hidden="true">▾</span>
+                    </button>
+
+                    <div
+                        class="webui-model-menu"
+                        id="model-menu"
+                        role="listbox"
+                        hidden
+                    ></div>
+
+                </div>
+
+                <div class="webui-top-actions">
+
+                    <button
+                        class="webui-icon"
+                        id="clear-btn"
+                        type="button"
+                        title="Delete this chat"
+                        aria-label="Delete this chat"
+                    >🗑</button>
+
+                    <button
+                        class="webui-icon"
+                        id="settings-btn"
+                        type="button"
+                        title="Settings"
+                        aria-label="Settings"
+                    >⚙</button>
+
+                </div>
+
+            </header>
+
+
+            <div
+                class="webui-thread"
+                id="thread"
+                role="log"
+                aria-live="polite"
+            ></div>
+
+
+            <div class="webui-composer-wrap">
+
+                <form class="webui-composer" id="composer">
+
+                    <textarea
+                        class="webui-input"
+                        id="prompt"
+                        rows="1"
+                        placeholder="Send a message…"
+                        aria-label="Message"
+                    ></textarea>
+
+                    <button
+                        class="webui-send"
+                        id="send-btn"
+                        type="submit"
+                        aria-label="Send"
+                    >↑</button>
+
+                </form>
+
+                <p class="webui-hint">
+                    Enter to send · Shift+Enter for a new line ·
+                    keys stay in your browser
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- SETTINGS -->
+
+    <div
+        class="webui-modal"
+        id="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Settings"
+        hidden
+    >
+
+        <div class="webui-modal-box">
+
+            <header class="webui-modal-head">
+
+                <div>
+                    <p class="webui-modal-eyebrow">BRING YOUR OWN KEY</p>
+                    <h2>Connect a provider</h2>
+                </div>
+
+                <button
+                    class="webui-icon"
+                    id="modal-close"
+                    type="button"
+                    aria-label="Close"
+                >×</button>
+
+            </header>
+
+            <p class="webui-modal-sub">
+                Your key is stored only in this browser and sent straight
+                to the provider you pick. The floating widget on the home
+                page shares the same connection.
+            </p>
+
+            <div class="webui-field">
+                <label for="set-provider">Provider</label>
+                <select id="set-provider"></select>
+            </div>
+
+            <div class="webui-field">
+                <label for="set-model">Model</label>
+                <input id="set-model" list="set-models" type="text" autocomplete="off" spellcheck="false" placeholder="model name">
+                <datalist id="set-models"></datalist>
+            </div>
+
+            <div class="webui-field" id="set-base-field" hidden>
+                <label for="set-base">Base URL</label>
+                <input id="set-base" type="text" autocomplete="off" spellcheck="false" placeholder="https://your-endpoint/v1">
+            </div>
+
+            <div class="webui-field">
+                <label for="set-key">API key</label>
+                <input id="set-key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-…">
+            </div>
+
+            <div class="webui-field">
+                <label for="set-system">System prompt (optional)</label>
+                <textarea id="set-system" rows="3" spellcheck="false" placeholder="Leave blank for the site default"></textarea>
+            </div>
+
+            <label class="webui-check">
+                <input type="checkbox" id="set-remember" checked>
+                remember in this browser
+            </label>
+
+            <div class="webui-modal-actions">
+
+                <button class="webui-btn primary" id="set-save" type="button">connect</button>
+                <button class="webui-btn" id="set-test" type="button">test</button>
+                <button class="webui-btn ghost" id="set-forget" type="button">forget</button>
+
+                <a
+                    class="webui-keylink"
+                    id="set-keylink"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    hidden
+                >get a key ↗</a>
+
+            </div>
+
+            <p class="webui-status" id="set-status"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="../ai.js" defer></script>
+    <script src="webui.js" defer></script>
+
+</body>
+</html>
