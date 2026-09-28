@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Minesweeper — clear the field without guessing twice."
+    >
+
+    <meta
+        name="theme-color"
+        content="#030812"
+    >
+
+    <title>Minesweeper — kaihang arcade</title>
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../games.css">
+    <link rel="stylesheet" href="minesweeper.css">
+</head>
+
+<body class="arc-body">
+
+    <div class="background" aria-hidden="true"></div>
+
+
+    <header class="arc-top">
+
+        <a
+            class="arc-back"
+            href="../"
+        >
+            ← arcade
+        </a>
+
+        <div class="arc-brand">
+            <b>MINES</b>
+            <span>SWEEPER</span>
+        </div>
+
+        <div class="arc-topright">
+
+            <span class="arc-session">
+                click to clear · right-click to flag
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <main class="game-wrap">
+
+        <section class="game-panel">
+
+            <div class="game-head">
+
+                <div class="game-title">
+                    MINESWEEPER<span>_</span>
+                </div>
+
+                <div class="game-stats">
+
+                    <div class="stat">
+                        MINES
+                        <b id="mines">0</b>
+                    </div>
+
+                    <div class="stat">
+                        TIME
+                        <b id="time">0</b>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-stage">
+
+                <div class="ms-scroll">
+
+                    <div
+                        class="ms-board"
+                        id="board"
+                        aria-label="Minesweeper board"
+                    ></div>
+
+                </div>
+
+                <div class="overlay hidden" id="overlay">
+
+                    <div>
+
+                        <h2 id="overlay-title">
+                            Cleared
+                        </h2>
+
+                        <p id="overlay-text"></p>
+
+                        <button
+                            class="g-btn primary"
+                            id="overlay-btn"
+                            type="button"
+                        >
+                            Play again
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-tools">
+
+                <button
+                    class="g-btn primary"
+                    id="restart-btn"
+                    type="button"
+                >
+                    New game
+                </button>
+
+                <button
+                    class="g-btn"
+                    id="flag-btn"
+                    type="button"
+                    aria-pressed="false"
+                >
+                    Flag mode: off
+                </button>
+
+                <label class="g-field">
+
+                    Difficulty
+
+                    <select id="level">
+                        <option value="easy">Easy · 9×9</option>
+                        <option value="medium" selected>Medium · 16×16</option>
+                        <option value="hard">Hard · 30×16</option>
+                    </select>
+
+                </label>
+
+                <span class="game-note">
+                    your first click is never a mine
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script
+        src="minesweeper.js"
+        defer
+    ></script>
+
+</body>
+</html>

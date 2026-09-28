@@ -1,0 +1,9 @@
+/*
+ * Pong
+ *
+ * Portrait-ish canvas; nothing beyond the shared board rules.
+ */
+
+.game-stage canvas.board {
+    max-width: 100%;
+}

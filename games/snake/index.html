@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Snake — eat, grow, and try not to bite yourself."
+    >
+
+    <meta
+        name="theme-color"
+        content="#030812"
+    >
+
+    <title>Snake — kaihang arcade</title>
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../games.css">
+    <link rel="stylesheet" href="snake.css">
+</head>
+
+<body class="arc-body">
+
+    <div class="background" aria-hidden="true"></div>
+
+
+    <header class="arc-top">
+
+        <a
+            class="arc-back"
+            href="../"
+        >
+            ← arcade
+        </a>
+
+        <div class="arc-brand">
+            <b>SNAKE</b>
+            <span>1P</span>
+        </div>
+
+        <div class="arc-topright">
+
+            <span class="arc-session">
+                arrows / WASD · swipe on touch
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <main class="game-wrap">
+
+        <section class="game-panel">
+
+            <div class="game-head">
+
+                <div class="game-title">
+                    SNAKE<span>_</span>
+                </div>
+
+                <div class="game-stats">
+
+                    <div class="stat">
+                        SCORE
+                        <b id="score">0</b>
+                    </div>
+
+                    <div class="stat">
+                        BEST
+                        <b id="best">0</b>
+                    </div>
+
+                    <div class="stat">
+                        LENGTH
+                        <b id="length">3</b>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-stage">
+
+                <canvas
+                    id="board"
+                    class="board"
+                    width="480"
+                    height="480"
+                    aria-label="Snake board"
+                ></canvas>
+
+                <div class="overlay" id="overlay">
+
+                    <div>
+
+                        <h2 id="overlay-title">
+                            Snake
+                        </h2>
+
+                        <p id="overlay-text">
+                            Eat the pink dots. Every one makes you
+                            longer and a little bit faster. The edges
+                            are real and so is your own tail.
+                        </p>
+
+                        <button
+                            class="g-btn primary"
+                            id="start-btn"
+                            type="button"
+                        >
+                            Play
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-tools">
+
+                <button
+                    class="g-btn primary"
+                    id="restart-btn"
+                    type="button"
+                >
+                    New game
+                </button>
+
+                <button
+                    class="g-btn"
+                    id="pause-btn"
+                    type="button"
+                >
+                    Pause
+                </button>
+
+                <span class="game-note">
+                    space pauses · best score is saved in this browser
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script
+        src="snake.js"
+        defer
+    ></script>
+
+</body>
+</html>
