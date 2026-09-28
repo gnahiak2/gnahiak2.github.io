@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Connect Four — drop discs, line up four, out-think the machine."
+    >
+
+    <meta
+        name="theme-color"
+        content="#030812"
+    >
+
+    <title>Connect Four — kaihang arcade</title>
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../games.css">
+    <link rel="stylesheet" href="connect4.css">
+</head>
+
+<body class="arc-body">
+
+    <div class="background" aria-hidden="true"></div>
+
+
+    <header class="arc-top">
+
+        <a
+            class="arc-back"
+            href="../"
+        >
+            ← arcade
+        </a>
+
+        <div class="arc-brand">
+            <b>CONNECT</b>
+            <span>FOUR</span>
+        </div>
+
+        <div class="arc-topright">
+
+            <span class="arc-session">
+                line up four discs to win
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <main class="game-wrap">
+
+        <section class="game-panel">
+
+            <div class="game-head">
+
+                <div class="game-title">
+                    CONNECT FOUR<span>_</span>
+                </div>
+
+                <div class="game-stats">
+
+                    <div class="stat">
+                        YOU
+                        <b id="score-you">0</b>
+                    </div>
+
+                    <div class="stat">
+                        CPU
+                        <b id="score-cpu">0</b>
+                    </div>
+
+                    <div class="stat">
+                        DRAWS
+                        <b id="score-d">0</b>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-stage">
+
+                <div
+                    class="c4-board"
+                    id="board"
+                    aria-label="Connect four board"
+                ></div>
+
+                <div class="overlay hidden" id="overlay">
+
+                    <div>
+
+                        <h2 id="overlay-title">
+                            Draw
+                        </h2>
+
+                        <p id="overlay-text"></p>
+
+                        <button
+                            class="g-btn primary"
+                            id="overlay-btn"
+                            type="button"
+                        >
+                            Next round
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-tools">
+
+                <button
+                    class="g-btn primary"
+                    id="restart-btn"
+                    type="button"
+                >
+                    New round
+                </button>
+
+                <label class="g-field">
+
+                    Opponent
+
+                    <select id="mode">
+                        <option value="ai" selected>Computer</option>
+                        <option value="two">Two players</option>
+                    </select>
+
+                </label>
+
+                <label class="g-field">
+
+                    Skill
+
+                    <select id="difficulty">
+                        <option value="hard" selected>Hard</option>
+                        <option value="easy">Easy</option>
+                    </select>
+
+                </label>
+
+                <span class="game-note" id="status">
+                    You are blue
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script
+        src="connect4.js"
+        defer
+    ></script>
+
+</body>
+</html>

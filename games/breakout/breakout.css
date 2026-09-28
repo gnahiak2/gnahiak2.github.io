@@ -1,0 +1,10 @@
+/*
+ * Breakout
+ *
+ * The canvas is wider than tall, so it is allowed a little
+ * more room than the square game boards.
+ */
+
+.game-stage canvas.board {
+    max-width: 100%;
+}

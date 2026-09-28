@@ -1,0 +1,21 @@
+/*
+ * Snake
+ *
+ * Only the bits games.css does not already cover.
+ */
+
+.game-stage canvas.board {
+    max-width: 460px;
+}
+
+
+@media (max-width: 600px) {
+
+    .game-stats {
+        gap: 12px;
+    }
+
+    .stat b {
+        font-size: 14px;
+    }
+}

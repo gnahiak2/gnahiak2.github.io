@@ -1,0 +1,118 @@
+/*
+ * 2048
+ *
+ * Tile colours run from a cool blue at the start to the
+ * site's pink for the tile that shares the game's name.
+ */
+
+.board2048 {
+    position: relative;
+
+    width: 100%;
+    max-width: 460px;
+
+    aspect-ratio: 1 / 1;
+
+    padding: 10px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    gap: 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 12px;
+
+    background:
+        rgba(3, 9, 18, 0.72);
+
+    touch-action: none;
+}
+
+
+.board2048 .overlay {
+    border-radius: 12px;
+}
+
+
+.tile {
+    display: grid;
+
+    place-items: center;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background:
+        rgba(10, 23, 40, 0.85);
+
+    color: var(--text);
+
+    font-family: monospace;
+    font-weight: 800;
+
+    font-size:
+        clamp(
+            16px,
+            5.4vw,
+            28px
+        );
+
+    transition:
+        background 120ms ease,
+        color 120ms ease;
+}
+
+
+.tile.pop {
+    animation:
+        tile-pop 150ms ease;
+}
+
+
+@keyframes tile-pop {
+
+    0% { transform: scale(0.72); }
+
+    100% { transform: scale(1); }
+
+}
+
+
+.tile.v2 { background: #16324f; color: #cfe4ff; }
+
+.tile.v4 { background: #1b4571; color: #e2eeff; }
+
+.tile.v8 { background: #1f6fb0; color: #f2f8ff; }
+
+.tile.v16 { background: #1683ff; color: #ffffff; }
+
+.tile.v32 { background: #58b7ff; color: #06121f; }
+
+.tile.v64 { background: #7fd0ff; color: #06121f; }
+
+.tile.v128 { background: #4ade80; color: #04220f; }
+
+.tile.v256 { background: #37c46a; color: #04220f; }
+
+.tile.v512 { background: #ffb454; color: #241300; }
+
+.tile.v1024 { background: #ff9d3d; color: #241300; }
+
+.tile.v2048 { background: #ff5c7a; color: #2a0410; }
+
+.tile.v4096 { background: #b18cff; color: #170733; }
+
+
+@media (max-width: 600px) {
+
+    .board2048 {
+        gap: 7px;
+        padding: 7px;
+    }
+}

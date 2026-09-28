@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="2048 — slide the tiles, merge the pairs, reach the number."
+    >
+
+    <meta
+        name="theme-color"
+        content="#030812"
+    >
+
+    <title>2048 — kaihang arcade</title>
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../games.css">
+    <link rel="stylesheet" href="2048.css">
+</head>
+
+<body class="arc-body">
+
+    <div class="background" aria-hidden="true"></div>
+
+
+    <header class="arc-top">
+
+        <a
+            class="arc-back"
+            href="../"
+        >
+            ← arcade
+        </a>
+
+        <div class="arc-brand">
+            <b>2048</b>
+            <span>PUZZLE</span>
+        </div>
+
+        <div class="arc-topright">
+
+            <span class="arc-session">
+                arrows / WASD · swipe on touch
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <main class="game-wrap">
+
+        <section class="game-panel">
+
+            <div class="game-head">
+
+                <div class="game-title">
+                    2048<span>_</span>
+                </div>
+
+                <div class="game-stats">
+
+                    <div class="stat">
+                        SCORE
+                        <b id="score">0</b>
+                    </div>
+
+                    <div class="stat">
+                        BEST
+                        <b id="best">0</b>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-stage">
+
+                <div
+                    class="board2048"
+                    id="board"
+                    aria-label="2048 board"
+                >
+
+                    <div class="overlay hidden" id="overlay">
+
+                        <div>
+
+                            <h2 id="overlay-title">
+                                Game over
+                            </h2>
+
+                            <p id="overlay-text"></p>
+
+                            <button
+                                class="g-btn primary"
+                                id="overlay-btn"
+                                type="button"
+                            >
+                                Play again
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-tools">
+
+                <button
+                    class="g-btn primary"
+                    id="restart-btn"
+                    type="button"
+                >
+                    New game
+                </button>
+
+                <span class="game-note">
+                    join matching tiles · 2048 is the goal, not the end
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script
+        src="2048.js"
+        defer
+    ></script>
+
+</body>
+</html>

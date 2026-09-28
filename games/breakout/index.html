@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Breakout — one paddle, one ball, a wall of bricks."
+    >
+
+    <meta
+        name="theme-color"
+        content="#030812"
+    >
+
+    <title>Breakout — kaihang arcade</title>
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../games.css">
+    <link rel="stylesheet" href="breakout.css">
+</head>
+
+<body class="arc-body">
+
+    <div class="background" aria-hidden="true"></div>
+
+
+    <header class="arc-top">
+
+        <a
+            class="arc-back"
+            href="../"
+        >
+            ← arcade
+        </a>
+
+        <div class="arc-brand">
+            <b>BREAKOUT</b>
+            <span>1P</span>
+        </div>
+
+        <div class="arc-topright">
+
+            <span class="arc-session">
+                mouse / arrows / touch
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <main class="game-wrap">
+
+        <section class="game-panel">
+
+            <div class="game-head">
+
+                <div class="game-title">
+                    BREAKOUT<span>_</span>
+                </div>
+
+                <div class="game-stats">
+
+                    <div class="stat">
+                        SCORE
+                        <b id="score">0</b>
+                    </div>
+
+                    <div class="stat">
+                        BEST
+                        <b id="best">0</b>
+                    </div>
+
+                    <div class="stat">
+                        BALLS
+                        <b id="lives">3</b>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-stage">
+
+                <canvas
+                    id="board"
+                    class="board"
+                    width="480"
+                    height="360"
+                    aria-label="Breakout board"
+                ></canvas>
+
+                <div class="overlay" id="overlay">
+
+                    <div>
+
+                        <h2 id="overlay-title">
+                            Breakout
+                        </h2>
+
+                        <p id="overlay-text">
+                            Keep the ball off the floor and knock out
+                            every brick. Move with the mouse, arrows or
+                            WASD, and mind the corners.
+                        </p>
+
+                        <button
+                            class="g-btn primary"
+                            id="start-btn"
+                            type="button"
+                        >
+                            Play
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-tools">
+
+                <button
+                    class="g-btn primary"
+                    id="restart-btn"
+                    type="button"
+                >
+                    New game
+                </button>
+
+                <button
+                    class="g-btn"
+                    id="pause-btn"
+                    type="button"
+                >
+                    Pause
+                </button>
+
+                <span class="game-note">
+                    space pauses · the ball speeds up as you clear bricks
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script
+        src="breakout.js"
+        defer
+    ></script>
+
+</body>
+</html>
