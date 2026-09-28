@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kaihang — developer, hardware tinkerer, and Hack Club member.">
-    <meta name="theme-color" content="#f2ecdc">
+    <meta name="description" content="Kaihang — Singaporean developer, hardware tinkerer, and Hack Club member.">
+    <meta name="theme-color" content="#151210">
     <title>Kaihang</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="chat.css">
 </head>
 <body>
+
+    <a class="hc-flag" href="https://hackclub.com/" target="_blank" rel="noopener noreferrer" aria-label="Hack Club">
+        <img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club">
+    </a>
 
     <div class="background" aria-hidden="true"></div>
 
@@ -28,46 +32,24 @@
     <main>
 
         <section class="hero">
-            <div class="hero-text">
-                <div class="status-row">
-                    <div class="status">
-                        <span class="status-dot" aria-hidden="true"></span>
-                        tinkering with something
-                    </div>
-                </div>
-
-                <h1>Kaihang<span>.</span></h1>
-
-                <p class="subtitle">
-                    I'm a developer and hardware tinkerer. Most things I
-                    build start as <strong>"I wonder if I could…"</strong>
-                    and somehow turn into a working prototype.
-                </p>
-
-                <div class="buttons">
-                    <a href="#projects" class="button primary">See what I've built</a>
-                    <a href="https://github.com/gnahiak2" target="_blank" rel="noopener noreferrer" class="button secondary">GitHub ↗</a>
+            <div class="status-row">
+                <div class="status">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    building things in SG 🇸🇬
                 </div>
             </div>
 
-            <div class="terminal" aria-label="Terminal showing Kaihang's interests">
-                <div class="terminal-bar">
-                    <div class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></div>
-                    <span>kaihang@bench</span>
-                </div>
-                <div class="terminal-body">
-<pre><span class="dim">$</span> whoami
-<span class="blue">kaihang</span>
+            <h1>Kaihang<span>.</span></h1>
 
-<span class="dim">$</span> cat interests.txt
-rust · esp32 · linux servers
-networking · self-hosting · minecraft
+            <p class="subtitle">
+                Singaporean developer &amp; hardware tinkerer. Most things
+                I build start as <strong>"eh, can or not?"</strong> and
+                somehow become a working prototype.
+            </p>
 
-<span class="dim">$</span> systemctl status life
-<span class="green">● active (running)</span>
-
-<span class="dim">$</span> _</pre>
-                </div>
+            <div class="buttons">
+                <a href="#projects" class="button primary">See what I've built</a>
+                <a href="https://github.com/gnahiak2" target="_blank" rel="noopener noreferrer" class="button secondary">GitHub ↗</a>
             </div>
         </section>
 
@@ -94,24 +76,26 @@ networking · self-hosting · minecraft
 
             <div class="about-text">
                 <p>
-                    Software, hardware, servers, networks — if it can be
-                    taken apart and understood, I'm interested. I write a
-                    lot of <strong>Rust</strong> and <strong>TypeScript</strong>,
-                    and I keep a couple of <strong>ESP32s</strong> and a
-                    home server around for the fun of it.
+                    I'm a Singaporean who likes taking things apart to see
+                    how they work — software, hardware, servers, networks.
+                    I write a lot of <strong>Rust</strong> and
+                    <strong>TypeScript</strong>, tinker with
+                    <strong>ESP32s</strong>, and keep a home server around
+                    for the fun of it.
                 </p>
                 <p>
-                    I'm part of <strong>Hack Club</strong>, a community of
-                    teenagers who build things with code and curiosity.
-                    This whole site is hand-rolled — no framework, no
-                    build step, just HTML, CSS and a little JavaScript.
+                    When I'm not coding I'm probably <strong>makan-ing</strong>,
+                    lepaking at a hawker centre, or chasing the next
+                    "I wonder if I can…" idea. Built with code, kopi, and
+                    a healthy dose of kiasu.
                 </p>
             </div>
 
             <p class="hackclub-note">
-                Part of <a href="https://hackclub.com/" target="_blank" rel="noopener noreferrer">Hack Club</a> —
-                a community for young people who build things with code,
-                hardware and curiosity.
+                Proud member of <a href="https://hackclub.com/" target="_blank" rel="noopener noreferrer">Hack Club</a> —
+                a community of teenagers who build things with code and
+                curiosity. Hack Club is red, Singapore is red. Coincidence?
+                I think not.
             </p>
         </section>
 
@@ -136,7 +120,7 @@ networking · self-hosting · minecraft
 
         <section id="contact" class="section">
             <span class="section-no">04 · Contact</span>
-            <h2>Say hi.</h2>
+            <h2>Say hi, can?</h2>
 
             <div class="contact-links">
                 <a href="https://github.com/gnahiak2" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
@@ -147,8 +131,8 @@ networking · self-hosting · minecraft
     </main>
 
     <footer>
-        <span>© <span id="year"></span> Kaihang</span>
-        <span class="mono">built by hand · no tracking · no cookies</span>
+        <span>© <span id="year"></span> Kaihang · made in Singapore 🇸🇬</span>
+        <span class="mono">no tracking · no cookies · built with kopi</span>
     </footer>
 
     <script src="script.js" defer></script>

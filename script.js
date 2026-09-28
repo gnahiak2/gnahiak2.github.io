@@ -93,11 +93,11 @@ function init() {
 }
 
 console.log(
-    "%chey — you found the console.\n" +
-    "if you're poking around, you might like OMNIVM:\n" +
+    "%cwah, you found the console. steady lah.\n" +
+    "if you're poking around, try OMNIVM:\n" +
     "  https://gnahiak2.dev/omnivm/\n" +
-    "good luck. it's awake.",
-    "color:#d9480f;font-family:monospace;"
+    "good luck. it's awake — and very kiasu.",
+    "color:#ef3340;font-family:monospace;"
 );
 
 init();
