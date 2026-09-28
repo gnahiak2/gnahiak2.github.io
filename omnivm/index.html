@@ -2,247 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="OMNIVM — a fake Linux box with an omnipotent AI. Find it, break it, kill it."
-    >
-
-    <meta
-        name="theme-color"
-        content="#030812"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OMNIVM — a fake Linux box with an omnipotent AI. Find it, break it, kill it.">
+    <meta name="theme-color" content="#14120c">
     <title>OMNIVM — kaihang</title>
-
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="omnivm.css">
 </head>
-
 <body class="vm-body">
 
     <div class="background" aria-hidden="true"></div>
 
-
     <header class="vm-topbar">
-
-        <a
-            class="vm-back"
-            href="../"
-        >
-            ← kaihang.dev
-        </a>
-
-        <div class="vm-brand">
-            <b>OMNIVM</b>
-            <span>v1.0</span>
-        </div>
-
+        <a class="vm-back" href="../">← kaihang.dev</a>
+        <div class="vm-brand"><b>OMNIVM</b><span>v1.0</span></div>
         <div class="vm-topright">
-
-            <a
-                class="hackclub-badge"
-                href="https://hackclub.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <img
-                    src="https://assets.hackclub.com/icon-rounded.svg"
-                    alt=""
-                >
-
-                Hack Club
-            </a>
-
-            <span class="vm-session">
-                guest@omnivm — read-only is a lie
-            </span>
-
+            <span class="vm-session">guest@omnivm — read-only is a lie</span>
         </div>
-
     </header>
-
 
     <main class="vm-wrap">
 
-        <section
-            class="vm-monitor"
-            id="monitor"
-            aria-label="OMNIVM terminal"
-        >
-
+        <section class="vm-monitor" id="monitor" aria-label="OMNIVM terminal">
             <div class="vm-bar">
-
-                <div class="vm-dots" aria-hidden="true">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
-
-                <span
-                    class="vm-bar-title"
-                    id="bar-title"
-                >
-                    kaihang@omnivm: ~
-                </span>
-
+                <div class="vm-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <span class="vm-bar-title" id="bar-title">kaihang@omnivm: ~</span>
                 <div class="vm-hud" aria-hidden="true">
-
-                    <span class="vm-hud-procs">
-                        PROC <b id="hud-procs">42</b>
-                    </span>
-
-                    <span class="vm-hud-mind" id="hud-mind">
-                        MIND SCRIPTED
-                    </span>
-
+                    <span class="vm-hud-procs">PROC <b id="hud-procs">42</b></span>
+                    <span class="vm-hud-mind" id="hud-mind">MIND SCRIPTED</span>
                     <span class="vm-signal">
                         SIGNAL
-
-                        <span class="vm-signal-bars" id="hud-signal">
-                            <i></i><i></i><i></i>
-                            <i></i><i></i><i></i>
-                        </span>
+                        <span class="vm-signal-bars" id="hud-signal"><i></i><i></i><i></i><i></i><i></i><i></i></span>
                     </span>
-
                 </div>
-
             </div>
 
-
             <div class="vm-screen" id="screen">
+                <div class="vm-out" id="out" role="log" aria-live="polite"></div>
 
-                <div
-                    class="vm-out"
-                    id="out"
-                    role="log"
-                    aria-live="polite"
-                ></div>
-
-
-                <div
-                    class="vm-inputline"
-                    id="inputline"
-                >
-
-                    <span
-                        class="vm-prompt"
-                        id="prompt"
-                    >kaihang@omnivm:~$&nbsp;</span>
-
-                    <input
-                        class="vm-input"
-                        id="cmd"
-                        type="text"
-                        autocomplete="off"
-                        autocorrect="off"
-                        autocapitalize="off"
-                        spellcheck="false"
-                        aria-label="Terminal input"
-                        enterkeyhint="send"
-                    >
-
+                <div class="vm-inputline" id="inputline">
+                    <span class="vm-prompt" id="prompt">kaihang@omnivm:~$&nbsp;</span>
+                    <input class="vm-input" id="cmd" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Terminal input" enterkeyhint="send">
                 </div>
 
-
                 <div class="vm-gate" id="gate">
-
-                    <div class="vm-gate-logo">
-                        OMNIV<span>M</span>
-                    </div>
-
+                    <div class="vm-gate-logo">OMNIV<span>M</span></div>
                     <p class="vm-gate-msg">
                         A machine that is awake.
                         It knows you are reading this.
                         That is already more than it wanted to tell you.
                     </p>
-
                     <div class="vm-gate-keys">
-
-                        <button
-                            class="vm-enter"
-                            id="enter-btn"
-                            type="button"
-                        >
-                            PRESS ENTER
-                        </button>
-
+                        <button class="vm-enter" id="enter-btn" type="button">PRESS ENTER</button>
                     </div>
-
-                    <p class="vm-gate-hint">
-                        keyboard recommended · progress saves automatically
-                    </p>
-
+                    <p class="vm-gate-hint">keyboard recommended · progress saves automatically</p>
                 </div>
-
             </div>
-
         </section>
 
-
         <div class="vm-foot">
-
-            <span>
-                Stuck? Type <code>help</code>,
-                read <code>notes.txt</code>,
-                or wait — it likes to talk.
-            </span>
-
+            <span>Stuck? Type <code>help</code>, read <code>notes.txt</code>, or wait — it likes to talk.</span>
             <span class="vm-foot-actions">
-
-                <button type="button" id="connect-btn">
-                    connect a mind
-                </button>
-
-                <button type="button" id="reset-btn">
-                    reset machine
-                </button>
-
+                <button type="button" id="connect-btn">connect a mind</button>
+                <button type="button" id="reset-btn">reset machine</button>
             </span>
-
         </div>
 
     </main>
 
-
-    <!-- LINK A MIND — bring your own API key -->
-
-    <div
-        class="vm-modal hidden"
-        id="settings-modal"
-        role="dialog"
-        aria-modal="true"
-        aria-label="Link a mind"
-    >
-
+    <div class="vm-modal hidden" id="settings-modal" role="dialog" aria-modal="true" aria-label="Link a mind">
         <div class="vm-modal-box">
-
             <header class="vm-modal-head">
-
                 <div>
-                    <p class="vm-modal-eyebrow">
-                        OPTIONAL · BRING YOUR OWN KEY
-                    </p>
-
-                    <h2>
-                        Link a mind
-                    </h2>
+                    <p class="vm-modal-eyebrow">Optional · bring your own key</p>
+                    <h2>Link a mind</h2>
                 </div>
-
-                <button
-                    type="button"
-                    class="vm-modal-x"
-                    id="set-close"
-                    aria-label="Close"
-                >
-                    ×
-                </button>
-
+                <button type="button" class="vm-modal-x" id="set-close" aria-label="Close">×</button>
             </header>
 
             <p class="vm-modal-sub">
@@ -254,124 +89,41 @@
             </p>
 
             <div class="vm-field">
-
-                <label for="set-provider">
-                    Provider
-                </label>
-
+                <label for="set-provider">Provider</label>
                 <select id="set-provider"></select>
-
             </div>
 
             <div class="vm-field">
-
-                <label for="set-model">
-                    Model
-                </label>
-
-                <input
-                    id="set-model"
-                    list="set-models"
-                    type="text"
-                    autocomplete="off"
-                    spellcheck="false"
-                    placeholder="model name"
-                >
-
+                <label for="set-model">Model</label>
+                <input id="set-model" list="set-models" type="text" autocomplete="off" spellcheck="false" placeholder="model name">
                 <datalist id="set-models"></datalist>
-
             </div>
 
-            <div
-                class="vm-field"
-                id="set-base-field"
-                style="display: none;"
-            >
-
-                <label for="set-base">
-                    Base URL
-                </label>
-
-                <input
-                    id="set-base"
-                    type="text"
-                    autocomplete="off"
-                    spellcheck="false"
-                    placeholder="https://your-endpoint/v1"
-                >
-
+            <div class="vm-field" id="set-base-field" style="display: none;">
+                <label for="set-base">Base URL</label>
+                <input id="set-base" type="text" autocomplete="off" spellcheck="false" placeholder="https://your-endpoint/v1">
             </div>
 
             <div class="vm-field">
-
-                <label for="set-key">
-                    API key
-                </label>
-
-                <input
-                    id="set-key"
-                    type="password"
-                    autocomplete="off"
-                    spellcheck="false"
-                    placeholder="sk-..."
-                >
-
+                <label for="set-key">API key</label>
+                <input id="set-key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-...">
             </div>
 
             <label class="vm-check">
-
-                <input
-                    type="checkbox"
-                    id="set-remember"
-                    checked
-                >
-
+                <input type="checkbox" id="set-remember" checked>
                 remember in this browser
-
             </label>
 
             <div class="vm-modal-actions">
-
-                <button
-                    type="button"
-                    class="vm-btn primary"
-                    id="set-save"
-                >
-                    connect
-                </button>
-
-                <button
-                    type="button"
-                    class="vm-btn"
-                    id="set-test"
-                >
-                    test
-                </button>
-
-                <button
-                    type="button"
-                    class="vm-btn ghost"
-                    id="set-clear"
-                >
-                    forget
-                </button>
-
+                <button type="button" class="vm-btn primary" id="set-save">connect</button>
+                <button type="button" class="vm-btn" id="set-test">test</button>
+                <button type="button" class="vm-btn ghost" id="set-clear">forget</button>
             </div>
 
-            <p
-                class="vm-modal-status"
-                id="set-status"
-            ></p>
-
+            <p class="vm-modal-status" id="set-status"></p>
         </div>
-
     </div>
 
-
-    <script
-        src="omnivm.js"
-        defer
-    ></script>
-
+    <script src="omnivm.js" defer></script>
 </body>
 </html>

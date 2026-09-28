@@ -1,98 +1,44 @@
-/*
- * webui.css — a full-page, Open WebUI-flavoured chat client.
- *
- * Depends on the design tokens in ../style.css. Layout is a
- * two-column shell: a conversations sidebar and a chat pane.
- */
-
-
 /* ============================================================
- * SHELL
- * ============================================================ */
+   webui.css — a full-page chat client.
+   Warm paper everywhere, ink text, signal-orange accents.
+   Depends on the design tokens in ../style.css.
+   ============================================================ */
 
-.webui-body {
-    height: 100vh;
-    height: 100dvh;
-
-    overflow: hidden;
-}
+.webui-body { height: 100vh; height: 100dvh; overflow: hidden; }
 
 .webui {
     position: relative;
-
     z-index: 1;
-
     display: grid;
-
-    grid-template-columns:
-        286px
-        1fr;
-
+    grid-template-columns: 286px 1fr;
     height: 100vh;
     height: 100dvh;
 }
 
-
-/* ============================================================
- * SIDEBAR
- * ============================================================ */
+/* ---------- sidebar ---------- */
 
 .webui-side {
     display: flex;
     flex-direction: column;
-
     min-height: 0;
-
-    border-right:
-        1px solid var(--border);
-
-    background:
-        linear-gradient(
-            180deg,
-            rgba(7, 17, 31, 0.96),
-            rgba(4, 9, 17, 0.98)
-        );
-
-    backdrop-filter:
-        blur(12px);
+    border-right: 1px solid var(--line);
+    background: var(--paper-2);
 }
 
-.webui-side-head {
-    padding: 16px 14px 10px;
-}
+.webui-side-head { padding: 16px 14px 10px; }
 
-.webui-brand {
-    display: block;
-
-    margin-bottom: 14px;
-
-    font-size: 16px;
-    font-weight: 700;
-
-    letter-spacing: -0.01em;
-}
-
-.webui-brand span {
-    color: var(--blue);
-}
-
+.webui-brand { display: block; margin-bottom: 14px; font-size: 16px; font-weight: 700; letter-spacing: -.01em; }
+.webui-brand span { color: var(--accent); }
 .webui-brand em {
     margin-left: 4px;
-
     padding: 2px 7px;
-
-    border:
-        1px solid var(--border);
-
+    border: 1px solid var(--line);
     border-radius: 999px;
-
     color: var(--muted);
-
     font-size: 10.5px;
     font-style: normal;
     font-weight: 600;
-
-    letter-spacing: 0.12em;
+    letter-spacing: .12em;
     text-transform: uppercase;
 }
 
@@ -100,1194 +46,481 @@
     display: flex;
     align-items: center;
     gap: 8px;
-
     width: 100%;
-
     padding: 10px 12px;
-
-    border:
-        1px solid var(--border-hover);
-
-    border-radius: 10px;
-
-    background:
-        rgba(22, 131, 255, 0.08);
-
-    color: var(--text);
-
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+    background: var(--accent-soft);
+    color: var(--ink);
     font: inherit;
     font-size: 13.5px;
     font-weight: 600;
-
     cursor: pointer;
-
-    transition:
-        background 150ms ease,
-        border-color 150ms ease;
+    transition: background .15s ease, border-color .15s ease;
 }
-
-.webui-new:hover {
-    border-color: var(--blue);
-
-    background:
-        rgba(22, 131, 255, 0.16);
-}
+.webui-new:hover { border-color: var(--accent); background: var(--accent-soft); }
 
 .webui-chats {
     flex: 1;
-
     min-height: 0;
-
     overflow-y: auto;
-
     padding: 6px 10px 10px;
-
     scrollbar-width: thin;
-
-    scrollbar-color:
-        var(--border-hover)
-        transparent;
+    scrollbar-color: var(--line-strong) transparent;
 }
 
 .webui-chat {
     display: flex;
     align-items: center;
     gap: 8px;
-
     width: 100%;
-
     margin-bottom: 3px;
-
     padding: 9px 10px;
-
     border: none;
-    border-radius: 9px;
-
+    border-radius: 8px;
     background: transparent;
-
     color: var(--muted);
-
     font: inherit;
     font-size: 13.5px;
-
     text-align: left;
-
     cursor: pointer;
-
-    transition:
-        background 150ms ease,
-        color 150ms ease;
+    transition: background .15s ease, color .15s ease;
 }
+.webui-chat:hover { background: var(--paper-3); color: var(--ink); }
+.webui-chat.active { background: var(--accent-soft); color: var(--ink); }
 
-.webui-chat:hover {
-    background:
-        rgba(22, 131, 255, 0.08);
-
-    color: var(--text);
-}
-
-.webui-chat.active {
-    background:
-        rgba(22, 131, 255, 0.14);
-
-    color: var(--text);
-}
-
-.webui-chat-title {
-    flex: 1;
-
-    overflow: hidden;
-
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
+.webui-chat-title { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 .webui-chat-del {
     flex: none;
-
     width: 20px;
     height: 20px;
-
     border: none;
     border-radius: 6px;
-
     background: transparent;
-
     color: var(--muted);
-
     font: inherit;
     font-size: 13px;
     line-height: 1;
-
     opacity: 0;
-
     cursor: pointer;
-
-    transition: opacity 120ms ease;
+    transition: opacity .12s ease;
 }
-
 .webui-chat:hover .webui-chat-del,
-.webui-chat.active .webui-chat-del {
-    opacity: 1;
-}
+.webui-chat.active .webui-chat-del { opacity: 1; }
+.webui-chat-del:hover { background: var(--red-soft); color: var(--red); }
 
-.webui-chat-del:hover {
-    background:
-        rgba(236, 55, 80, 0.18);
+.webui-side-empty { padding: 14px 10px; color: var(--muted); font-size: 12.5px; }
 
-    color: #ff9aa8;
-}
-
-.webui-side-empty {
-    padding: 14px 10px;
-
-    color: var(--muted);
-
-    font-size: 12.5px;
-}
-
-.webui-side-foot {
-    padding: 10px 12px 14px;
-
-    border-top:
-        1px solid var(--border);
-}
+.webui-side-foot { padding: 10px 12px 14px; border-top: 1px solid var(--line); }
 
 .webui-connect {
     display: flex;
     align-items: center;
     gap: 8px;
-
     width: 100%;
-
     margin-bottom: 8px;
-
     padding: 9px 10px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 9px;
-
+    border: 1px solid var(--line);
+    border-radius: 8px;
     background: transparent;
-
     color: var(--muted);
-
     font: inherit;
     font-size: 12.5px;
-
     text-align: left;
-
     cursor: pointer;
 }
+.webui-connect:hover { border-color: var(--line-strong); color: var(--ink); }
 
-.webui-connect:hover {
-    border-color: var(--border-hover);
+.webui-connect-dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+.webui-connect-dot.live { background: var(--green); box-shadow: 0 0 8px rgba(47, 158, 68, .6); }
 
-    color: var(--text);
-}
+.webui-connect-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-.webui-connect-dot {
-    flex: none;
+.webui-back { display: inline-block; color: var(--muted); font-size: 12.5px; }
+.webui-back:hover { color: var(--accent); }
 
-    width: 8px;
-    height: 8px;
+/* ---------- main ---------- */
 
-    border-radius: 50%;
-
-    background: var(--muted);
-}
-
-.webui-connect-dot.live {
-    background: var(--green);
-
-    box-shadow:
-        0 0 8px
-        rgba(74, 222, 128, 0.7);
-}
-
-.webui-connect-text {
-    overflow: hidden;
-
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.webui-back {
-    display: inline-block;
-
-    color: var(--muted);
-
-    font-size: 12.5px;
-}
-
-.webui-back:hover {
-    color: var(--blue-light);
-}
-
-
-/* ============================================================
- * MAIN
- * ============================================================ */
-
-.webui-main {
-    display: flex;
-    flex-direction: column;
-
-    min-width: 0;
-    min-height: 0;
-}
+.webui-main { display: flex; flex-direction: column; min-width: 0; min-height: 0; background: var(--paper); }
 
 .webui-top {
     display: flex;
     align-items: center;
     gap: 10px;
-
     padding: 10px 14px;
-
-    border-bottom:
-        1px solid var(--border);
-
-    background:
-        rgba(5, 12, 22, 0.6);
+    border-bottom: 1px solid var(--line);
 }
 
 .webui-icon {
     display: grid;
     place-items: center;
-
     flex: none;
-
     width: 34px;
     height: 34px;
-
-    border:
-        1px solid transparent;
-
-    border-radius: 9px;
-
+    border: 1px solid transparent;
+    border-radius: 8px;
     background: transparent;
-
     color: var(--muted);
-
     font: inherit;
     font-size: 15px;
     line-height: 1;
-
     cursor: pointer;
-
-    transition:
-        color 150ms ease,
-        background 150ms ease,
-        border-color 150ms ease;
+    transition: color .15s ease, background .15s ease, border-color .15s ease;
 }
+.webui-icon:hover { border-color: var(--line); background: var(--paper-2); color: var(--ink); }
 
-.webui-icon:hover {
-    border-color: var(--border);
+#toggle-side { display: none; }
 
-    background:
-        rgba(22, 131, 255, 0.08);
-
-    color: var(--text);
-}
-
-#toggle-side {
-    display: none;
-}
-
-.webui-model-wrap {
-    position: relative;
-}
+.webui-model-wrap { position: relative; }
 
 .webui-model-btn {
     display: flex;
     align-items: center;
     gap: 8px;
-
     max-width: min(440px, 60vw);
-
     padding: 8px 12px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 10px;
-
-    background:
-        rgba(10, 23, 40, 0.6);
-
-    color: var(--text);
-
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--paper-2);
+    color: var(--ink);
     font: inherit;
     font-size: 13.5px;
     font-weight: 600;
-
     cursor: pointer;
 }
+.webui-model-btn:hover { border-color: var(--line-strong); }
 
-.webui-model-btn:hover {
-    border-color: var(--border-hover);
-}
-
-.webui-model-name {
-    overflow: hidden;
-
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
+.webui-model-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 .webui-model-provider {
     flex: none;
-
     padding: 2px 7px;
-
     border-radius: 999px;
-
-    background:
-        rgba(22, 131, 255, 0.16);
-
-    color: var(--blue-light);
-
+    background: var(--accent-soft);
+    color: var(--accent);
     font-size: 10.5px;
     font-weight: 600;
-
-    letter-spacing: 0.06em;
+    letter-spacing: .06em;
     text-transform: uppercase;
 }
 
 .webui-model-menu {
     position: absolute;
-
     top: calc(100% + 6px);
     left: 0;
-
     z-index: 20;
-
     width: min(380px, 80vw);
     max-height: 340px;
-
     overflow-y: auto;
-
     padding: 6px;
-
-    border:
-        1px solid var(--border-hover);
-
-    border-radius: 12px;
-
-    background:
-        rgba(7, 16, 29, 0.99);
-
-    box-shadow:
-        0 24px 60px
-        rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--line-strong);
+    border-radius: 10px;
+    background: var(--paper);
+    box-shadow: var(--shadow-lg);
 }
-
-.webui-model-menu[hidden] {
-    display: none;
-}
+.webui-model-menu[hidden] { display: none; }
 
 .webui-model-group {
     padding: 8px 10px 4px;
-
     color: var(--muted);
-
     font-size: 10.5px;
     font-weight: 700;
-
-    letter-spacing: 0.12em;
+    letter-spacing: .12em;
     text-transform: uppercase;
 }
 
 .webui-model-item {
     display: block;
-
     width: 100%;
-
     padding: 8px 10px;
-
     border: none;
-    border-radius: 8px;
-
+    border-radius: 7px;
     background: transparent;
-
     color: var(--muted);
-
     font: inherit;
     font-size: 13px;
-
     text-align: left;
-
     cursor: pointer;
 }
+.webui-model-item:hover { background: var(--paper-2); color: var(--ink); }
+.webui-model-item.active { background: var(--accent-soft); color: var(--ink); }
 
-.webui-model-item:hover {
-    background:
-        rgba(22, 131, 255, 0.1);
+.webui-top-actions { display: flex; gap: 4px; margin-left: auto; }
 
-    color: var(--text);
-}
+/* ---------- thread ---------- */
 
-.webui-model-item.active {
-    background:
-        rgba(22, 131, 255, 0.16);
-
-    color: var(--text);
-}
-
-.webui-top-actions {
-    display: flex;
-    gap: 4px;
-
-    margin-left: auto;
-}
-
-
-/* ============================================================
- * THREAD
- * ============================================================ */
-
-.webui-thread {
-    flex: 1;
-
-    min-height: 0;
-
-    overflow-y: auto;
-
-    scrollbar-width: thin;
-
-    scrollbar-color:
-        var(--border-hover)
-        transparent;
-}
-
-.webui-thread:empty {
-    display: none;
-}
+.webui-thread { flex: 1; min-height: 0; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; }
+.webui-thread:empty { display: none; }
 
 .webui-welcome {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     height: 100%;
-
     padding: 30px 24px;
-
     text-align: center;
 }
 
 .webui-welcome-orb {
     width: 62px;
     height: 62px;
-
     margin-bottom: 20px;
-
-    border-radius: 20px;
-
-    background:
-        linear-gradient(
-            145deg,
-            var(--blue),
-            var(--blue-dark)
-        );
-
-    box-shadow:
-        0 0 40px
-        rgba(22, 131, 255, 0.4);
+    border-radius: 18px;
+    background: var(--accent);
+    box-shadow: 0 0 40px rgba(217, 72, 15, .3);
 }
 
-.webui-welcome h1 {
-    margin-bottom: 8px;
-
-    font-size: clamp(24px, 4vw, 34px);
-
-    letter-spacing: -0.02em;
-}
-
-.webui-welcome p {
-    max-width: 460px;
-
-    margin-bottom: 26px;
-
-    color: var(--muted);
-
-    font-size: 14.5px;
-}
+.webui-welcome h1 { margin-bottom: 8px; font-size: clamp(24px, 4vw, 34px); letter-spacing: -.02em; }
+.webui-welcome p { max-width: 460px; margin-bottom: 26px; color: var(--muted); font-size: 14.5px; }
 
 .webui-suggestions {
     display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
-
     width: min(620px, 100%);
 }
 
 .webui-suggestion {
     padding: 13px 15px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 12px;
-
-    background:
-        rgba(10, 23, 40, 0.5);
-
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--paper-2);
     color: var(--muted);
-
     font: inherit;
     font-size: 13.5px;
-
     text-align: left;
-
     cursor: pointer;
-
-    transition:
-        border-color 150ms ease,
-        color 150ms ease,
-        transform 150ms ease;
+    transition: border-color .15s ease, color .15s ease, transform .15s ease;
 }
-
-.webui-suggestion:hover {
-    transform: translateY(-2px);
-
-    border-color: var(--border-hover);
-
-    color: var(--text);
-}
-
-.webui-suggestion b {
-    display: block;
-
-    margin-bottom: 3px;
-
-    color: var(--text);
-
-    font-size: 13px;
-}
-
+.webui-suggestion:hover { transform: translateY(-2px); border-color: var(--line-strong); color: var(--ink); }
+.webui-suggestion b { display: block; margin-bottom: 3px; color: var(--ink); font-size: 13px; }
 
 /* messages */
 
-.msg {
-    display: flex;
-    gap: 13px;
+.msg { display: flex; gap: 13px; width: 100%; max-width: 860px; margin: 0 auto; padding: 18px 24px; }
+.msg + .msg { border-top: 1px solid var(--line); }
 
-    width: 100%;
-    max-width: 860px;
+.msg-avatar { display: grid; place-items: center; flex: none; width: 32px; height: 32px; border-radius: 9px; font-size: 13px; font-weight: 700; }
+.msg.assistant .msg-avatar { background: var(--accent); color: #fff; }
+.msg.user .msg-avatar { background: var(--paper-3); color: var(--accent); border: 1px solid var(--line-strong); }
 
-    margin: 0 auto;
+.msg-body { flex: 1; min-width: 0; }
 
-    padding: 18px 24px;
-}
+.msg-role { margin-bottom: 6px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 
-.msg + .msg {
-    border-top:
-        1px solid rgba(18, 36, 58, 0.5);
-}
+.msg-content { color: var(--ink); font-size: 14.5px; line-height: 1.65; white-space: pre-wrap; overflow-wrap: anywhere; }
+.msg.error .msg-content { color: var(--red); }
 
-.msg-avatar {
-    display: grid;
-    place-items: center;
-
-    flex: none;
-
-    width: 32px;
-    height: 32px;
-
-    border-radius: 10px;
-
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.msg.assistant .msg-avatar {
-    background:
-        linear-gradient(
-            145deg,
-            var(--blue),
-            var(--blue-dark)
-        );
-
-    color: #fff;
-}
-
-.msg.user .msg-avatar {
-    background:
-        var(--surface-2);
-
-    color: var(--blue-light);
-
-    border:
-        1px solid var(--border-hover);
-}
-
-.msg-body {
-    flex: 1;
-
-    min-width: 0;
-}
-
-.msg-role {
-    margin-bottom: 6px;
-
-    color: var(--muted);
-
-    font-size: 11px;
-    font-weight: 700;
-
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
-
-.msg-content {
-    color: var(--text);
-
-    font-size: 14.5px;
-
-    line-height: 1.65;
-
-    white-space: pre-wrap;
-
-    overflow-wrap: anywhere;
-}
-
-.msg.error .msg-content {
-    color: #ffc9d1;
-}
-
-.msg-content a {
-    color: var(--blue-light);
-
-    text-decoration: underline;
-    text-underline-offset: 2px;
-}
+.msg-content a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 
 .msg-content code {
     padding: 1px 5px;
-
     border-radius: 5px;
-
-    background:
-        rgba(0, 0, 0, 0.35);
-
-    font-family:
-        "SFMono-Regular",
-        Consolas,
-        monospace;
-
+    background: var(--paper-3);
+    font-family: var(--mono);
     font-size: 12.5px;
 }
-
 .msg-content pre,
 .ai-code {
     margin: 10px 0;
-
     padding: 12px 14px;
-
     overflow-x: auto;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 10px;
-
-    background:
-        rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--screen);
+    color: var(--screen-text);
 }
-
 .msg-content pre code,
-.ai-code code {
-    padding: 0;
+.ai-code code { padding: 0; background: none; color: inherit; }
 
-    background: none;
-}
-
-.msg-tools {
-    display: flex;
-    gap: 8px;
-
-    margin-top: 9px;
-}
-
+.msg-tools { display: flex; gap: 8px; margin-top: 9px; }
 .msg-tool {
     padding: 4px 9px;
-
-    border:
-        1px solid var(--border);
-
+    border: 1px solid var(--line);
     border-radius: 7px;
-
     background: transparent;
-
     color: var(--muted);
-
     font: inherit;
     font-size: 11.5px;
-
     cursor: pointer;
 }
-
-.msg-tool:hover {
-    border-color: var(--border-hover);
-
-    color: var(--text);
-}
+.msg-tool:hover { border-color: var(--line-strong); color: var(--ink); }
 
 .msg-caret {
     display: inline-block;
-
     width: 7px;
     height: 15px;
-
     margin-left: 2px;
-
     vertical-align: -2px;
-
-    background: var(--blue-light);
-
-    animation:
-        webui-blink 1s steps(2, start)
-        infinite;
+    background: var(--accent);
+    animation: webui-blink 1s steps(2, start) infinite;
 }
+@keyframes webui-blink { 50% { opacity: 0; } }
 
-@keyframes webui-blink {
+/* ---------- composer ---------- */
 
-    50% {
-        opacity: 0;
-    }
-
-}
-
-
-/* ============================================================
- * COMPOSER
- * ============================================================ */
-
-.webui-composer-wrap {
-    padding: 0 24px 14px;
-}
+.webui-composer-wrap { padding: 0 24px 14px; }
 
 .webui-composer {
     display: flex;
     align-items: flex-end;
     gap: 10px;
-
     width: 100%;
     max-width: 860px;
-
     margin: 0 auto;
-
     padding: 10px 10px 10px 14px;
-
-    border:
-        1px solid var(--border-hover);
-
-    border-radius: 16px;
-
-    background:
-        rgba(7, 15, 27, 0.95);
-
-    box-shadow:
-        0 18px 50px
-        rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--line-strong);
+    border-radius: 12px;
+    background: var(--paper-2);
+    box-shadow: var(--shadow);
 }
 
 .webui-input {
     flex: 1;
-
     max-height: 200px;
-
     border: none;
-
     background: transparent;
-
-    color: var(--text);
-
+    color: var(--ink);
     font: inherit;
     font-size: 14.5px;
     line-height: 1.5;
-
     resize: none;
 }
-
-.webui-input:focus {
-    outline: none;
-}
-
-.webui-input::placeholder {
-    color: var(--muted);
-}
+.webui-input:focus { outline: none; }
+.webui-input::placeholder { color: var(--muted); }
 
 .webui-send {
     display: grid;
     place-items: center;
-
     flex: none;
-
     width: 38px;
     height: 38px;
-
     border: none;
-    border-radius: 11px;
-
-    background:
-        linear-gradient(
-            145deg,
-            var(--blue),
-            var(--blue-dark)
-        );
-
+    border-radius: 10px;
+    background: var(--accent);
     color: #fff;
-
     font: inherit;
     font-size: 17px;
     line-height: 1;
-
     cursor: pointer;
-
-    transition:
-        filter 150ms ease,
-        background 150ms ease;
+    transition: filter .15s ease, background .15s ease;
 }
+.webui-send:hover:not(:disabled) { filter: brightness(1.1); }
+.webui-send:disabled { cursor: default; }
+.webui-send.stop { background: var(--red); }
 
-.webui-send:hover:not(:disabled) {
-    filter: brightness(1.15);
-}
+.webui-hint { max-width: 860px; margin: 9px auto 0; color: var(--muted); font-size: 11.5px; text-align: center; }
 
-.webui-send:disabled {
-    cursor: default;
-}
-
-.webui-send.stop {
-    background:
-        linear-gradient(
-            145deg,
-            #ec3750,
-            #a3162c
-        );
-}
-
-.webui-hint {
-    max-width: 860px;
-
-    margin: 9px auto 0;
-
-    color: var(--muted);
-
-    font-size: 11.5px;
-
-    text-align: center;
-}
-
-
-/* ============================================================
- * MODAL
- * ============================================================ */
+/* ---------- modal ---------- */
 
 .webui-modal {
     position: fixed;
-
     inset: 0;
-
     z-index: 50;
-
     display: grid;
     place-items: center;
-
     padding: 20px;
-
-    background:
-        rgba(2, 6, 13, 0.72);
-
-    backdrop-filter:
-        blur(4px);
+    background: rgba(38, 33, 26, .5);
+    backdrop-filter: blur(4px);
 }
-
-.webui-modal[hidden] {
-    display: none;
-}
+.webui-modal[hidden] { display: none; }
 
 .webui-modal-box {
     width: min(520px, 100%);
     max-height: 90vh;
-
     overflow-y: auto;
-
     padding: 20px;
-
-    border:
-        1px solid var(--border-hover);
-
-    border-radius: 16px;
-
-    background:
-        linear-gradient(
-            160deg,
-            rgba(9, 20, 35, 0.99),
-            rgba(4, 10, 19, 0.99)
-        );
-
-    box-shadow:
-        0 30px 90px
-        rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--line-strong);
+    border-radius: 10px;
+    background: var(--paper);
+    box-shadow: var(--shadow-lg);
 }
 
-.webui-modal-head {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 12px;
+.webui-modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.webui-modal-eyebrow { margin-bottom: 4px; color: var(--accent); font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.webui-modal-head h2 { font-size: 20px; }
 
-    margin-bottom: 8px;
-}
+.webui-modal-sub { margin-bottom: 16px; color: var(--muted); font-size: 13px; line-height: 1.55; }
 
-.webui-modal-eyebrow {
-    margin-bottom: 4px;
-
-    color: var(--blue-light);
-
-    font-size: 10.5px;
-    font-weight: 700;
-
-    letter-spacing: 0.14em;
-}
-
-.webui-modal-head h2 {
-    font-size: 20px;
-}
-
-.webui-modal-sub {
-    margin-bottom: 16px;
-
-    color: var(--muted);
-
-    font-size: 13px;
-
-    line-height: 1.55;
-}
-
-.webui-field {
-    margin-bottom: 13px;
-}
-
+.webui-field { margin-bottom: 13px; }
 .webui-field label {
     display: block;
-
     margin-bottom: 5px;
-
     color: var(--muted);
-
     font-size: 11px;
     font-weight: 600;
-
-    letter-spacing: 0.09em;
+    letter-spacing: .09em;
     text-transform: uppercase;
 }
-
 .webui-field select,
 .webui-field input,
 .webui-field textarea {
     width: 100%;
-
     padding: 10px 12px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 9px;
-
-    background:
-        rgba(3, 8, 18, 0.85);
-
-    color: var(--text);
-
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--paper);
+    color: var(--ink);
     font: inherit;
     font-size: 13.5px;
-
     resize: vertical;
 }
-
 .webui-field select:focus,
 .webui-field input:focus,
-.webui-field textarea:focus {
-    outline: none;
+.webui-field textarea:focus { outline: none; border-color: var(--accent); }
 
-    border-color: var(--blue);
-}
+.webui-check { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; color: var(--muted); font-size: 13px; cursor: pointer; }
+.webui-check input { width: auto; accent-color: var(--accent); }
 
-.webui-check {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    margin-bottom: 16px;
-
-    color: var(--muted);
-
-    font-size: 13px;
-
-    cursor: pointer;
-}
-
-.webui-check input {
-    width: auto;
-
-    accent-color: var(--blue);
-}
-
-.webui-modal-actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-}
+.webui-modal-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 
 .webui-btn {
     padding: 10px 15px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 9px;
-
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
     background: transparent;
-
-    color: var(--text);
-
+    color: var(--ink);
     font: inherit;
     font-size: 13px;
-
     cursor: pointer;
 }
+.webui-btn:hover { border-color: var(--accent); background: var(--paper-2); }
+.webui-btn.primary { border-color: transparent; background: var(--accent); color: #fff; }
+.webui-btn.primary:hover { background: var(--accent-strong); }
 
-.webui-btn:hover {
-    border-color: var(--border-hover);
+.webui-keylink { margin-left: auto; color: var(--accent); font-size: 12.5px; }
 
-    background:
-        rgba(22, 131, 255, 0.08);
-}
+.webui-status { margin-top: 13px; color: var(--muted); font-size: 12.5px; line-height: 1.5; }
 
-.webui-btn.primary {
-    border-color: transparent;
+/* ---------- backdrop (mobile sidebar) ---------- */
 
-    background:
-        linear-gradient(
-            145deg,
-            var(--blue),
-            var(--blue-dark)
-        );
+.webui-backdrop { position: fixed; inset: 0; z-index: 5; background: rgba(38, 33, 26, .5); }
+.webui-backdrop[hidden] { display: none; }
 
-    color: #fff;
-}
-
-.webui-btn.primary:hover {
-    filter: brightness(1.12);
-}
-
-.webui-keylink {
-    margin-left: auto;
-
-    color: var(--blue-light);
-
-    font-size: 12.5px;
-}
-
-.webui-status {
-    margin-top: 13px;
-
-    color: var(--muted);
-
-    font-size: 12.5px;
-
-    line-height: 1.5;
-}
-
-
-/* ============================================================
- * BACKDROP (mobile sidebar)
- * ============================================================ */
-
-.webui-backdrop {
-    position: fixed;
-
-    inset: 0;
-
-    z-index: 5;
-
-    background:
-        rgba(2, 6, 13, 0.6);
-}
-
-.webui-backdrop[hidden] {
-    display: none;
-}
-
-
-/* ============================================================
- * RESPONSIVE
- * ============================================================ */
+/* ---------- responsive ---------- */
 
 @media (max-width: 820px) {
-
-    .webui {
-        grid-template-columns: 1fr;
-    }
+    .webui { grid-template-columns: 1fr; }
 
     .webui-side {
         position: fixed;
-
-        top: 0;
-        bottom: 0;
-        left: 0;
-
+        top: 0; bottom: 0; left: 0;
         z-index: 6;
-
         width: min(300px, 84vw);
-
-        transform:
-            translateX(-102%);
-
-        transition:
-            transform 200ms ease;
+        transform: translateX(-102%);
+        transition: transform .2s ease;
     }
+    .webui.side-open .webui-side { transform: none; }
 
-    .webui.side-open .webui-side {
-        transform: none;
-    }
+    #toggle-side { display: grid; }
 
-    #toggle-side {
-        display: grid;
-    }
-
-    .msg {
-        padding: 16px;
-    }
-
-    .webui-composer-wrap {
-        padding: 0 14px 12px;
-    }
-
-    .webui-suggestions {
-        grid-template-columns: 1fr;
-    }
-
+    .msg { padding: 16px; }
+    .webui-composer-wrap { padding: 0 14px 12px; }
+    .webui-suggestions { grid-template-columns: 1fr; }
 }
 
-
 @media (prefers-reduced-motion: reduce) {
-
-    .webui-side,
-    .webui-suggestion,
-    .msg-caret {
-        transition: none;
-
-        animation: none;
-    }
-
+    .webui-side, .webui-suggestion, .msg-caret { transition: none; animation: none; }
 }

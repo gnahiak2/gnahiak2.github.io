@@ -384,7 +384,7 @@
 
         if (!cfg.key) {
             statusEl.textContent = "enter a key first.";
-            statusEl.style.color = "var(--hackclub-red)";
+            statusEl.style.color = "var(--red)";
             return;
         }
 
@@ -406,7 +406,7 @@
 
         if (!cfg.key) {
             statusEl.textContent = "enter a key first.";
-            statusEl.style.color = "var(--hackclub-red)";
+            statusEl.style.color = "var(--red)";
             return;
         }
 
@@ -427,7 +427,7 @@
             })
             .catch((err) => {
                 statusEl.textContent = "failed: " + AI.humanError(err);
-                statusEl.style.color = "var(--hackclub-red)";
+                statusEl.style.color = "var(--red)";
             });
     }
 

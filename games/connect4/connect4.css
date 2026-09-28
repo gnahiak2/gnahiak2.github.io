@@ -3,104 +3,51 @@
  *
  * Round slots in a dark frame. The preview class shows where a
  * disc would land so hovering does not feel like a guess.
+ * Red vs amber, so the two sides are obvious at a glance.
  */
 
 .c4-board {
     display: grid;
-
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
-
     gap: 6px;
-
     width: 100%;
     max-width: 480px;
-
     aspect-ratio: 7 / 6;
-
     padding: 10px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 12px;
-
-    background:
-        rgba(3, 9, 18, 0.72);
-
+    border: 1px solid var(--screen-line);
+    border-radius: 8px;
+    background: var(--screen-2);
     touch-action: manipulation;
 }
 
-
 .c4-cell {
     padding: 0;
-
-    border:
-        1px solid var(--border);
-
+    border: 1px solid var(--screen-line);
     border-radius: 50%;
-
-    background:
-        rgba(10, 23, 40, 0.9);
-
+    background: #181510;
     cursor: pointer;
-
-    transition:
-        background 140ms ease,
-        box-shadow 140ms ease;
+    transition: background .14s ease, box-shadow .14s ease;
 }
 
-
-.c4-cell.empty:hover {
-    border-color:
-        var(--border-hover);
-}
-
+.c4-cell.empty:hover { border-color: var(--line-strong); }
 
 .c4-cell.r {
-    border-color: #1683ff;
-
-    background:
-        radial-gradient(
-            circle at 35% 30%,
-            #7fd0ff,
-            #1683ff
-        );
-
+    border-color: #e05a5a;
+    background: radial-gradient(circle at 35% 30%, #f0a3a0, #d6332f);
     cursor: default;
 }
-
 
 .c4-cell.y {
-    border-color: #ff5c7a;
-
-    background:
-        radial-gradient(
-            circle at 35% 30%,
-            #ffb0c0,
-            #ff5c7a
-        );
-
+    border-color: #e8930c;
+    background: radial-gradient(circle at 35% 30%, #f4c979, #e8930c);
     cursor: default;
 }
 
+.c4-cell.preview { background: rgba(217, 72, 15, .22); }
 
-.c4-cell.preview {
-    background:
-        rgba(22, 131, 255, 0.22);
-}
-
-
-.c4-cell.win {
-    box-shadow:
-        0 0 0 3px var(--green);
-}
-
+.c4-cell.win { box-shadow: 0 0 0 3px var(--green); }
 
 @media (max-width: 600px) {
-
-    .c4-board {
-        gap: 4px;
-        padding: 7px;
-    }
+    .c4-board { gap: 4px; padding: 7px; }
 }

@@ -1,118 +1,61 @@
 /*
  * 2048
  *
- * Tile colours run from a cool blue at the start to the
- * site's pink for the tile that shares the game's name.
+ * Tiles climb a warm ramp — dark clay up to hot signal orange and
+ * green — instead of the usual blue-to-purple gradient.
  */
 
 .board2048 {
     position: relative;
-
     width: 100%;
     max-width: 460px;
-
     aspect-ratio: 1 / 1;
-
     padding: 10px;
-
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-
     gap: 10px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 12px;
-
-    background:
-        rgba(3, 9, 18, 0.72);
-
+    border: 1px solid var(--screen-line);
+    border-radius: 8px;
+    background: var(--screen-2);
     touch-action: none;
 }
 
-
-.board2048 .overlay {
-    border-radius: 12px;
-}
-
+.board2048 .overlay { border-radius: 8px; }
 
 .tile {
     display: grid;
-
     place-items: center;
-
     overflow: hidden;
-
-    border-radius: 8px;
-
-    background:
-        rgba(10, 23, 40, 0.85);
-
-    color: var(--text);
-
-    font-family: monospace;
+    border-radius: 6px;
+    background: #2a251a;
+    color: var(--screen-text);
+    font-family: var(--mono);
     font-weight: 800;
-
-    font-size:
-        clamp(
-            16px,
-            5.4vw,
-            28px
-        );
-
-    transition:
-        background 120ms ease,
-        color 120ms ease;
+    font-size: clamp(16px, 5.4vw, 28px);
+    transition: background .12s ease, color .12s ease;
 }
 
-
-.tile.pop {
-    animation:
-        tile-pop 150ms ease;
-}
-
+.tile.pop { animation: tile-pop .15s ease; }
 
 @keyframes tile-pop {
-
-    0% { transform: scale(0.72); }
-
+    0% { transform: scale(.72); }
     100% { transform: scale(1); }
-
 }
 
-
-.tile.v2 { background: #16324f; color: #cfe4ff; }
-
-.tile.v4 { background: #1b4571; color: #e2eeff; }
-
-.tile.v8 { background: #1f6fb0; color: #f2f8ff; }
-
-.tile.v16 { background: #1683ff; color: #ffffff; }
-
-.tile.v32 { background: #58b7ff; color: #06121f; }
-
-.tile.v64 { background: #7fd0ff; color: #06121f; }
-
-.tile.v128 { background: #4ade80; color: #04220f; }
-
-.tile.v256 { background: #37c46a; color: #04220f; }
-
-.tile.v512 { background: #ffb454; color: #241300; }
-
-.tile.v1024 { background: #ff9d3d; color: #241300; }
-
-.tile.v2048 { background: #ff5c7a; color: #2a0410; }
-
-.tile.v4096 { background: #b18cff; color: #170733; }
-
+.tile.v2 { background: #3a3326; color: #dcd6c3; }
+.tile.v4 { background: #54492f; color: #efe7d4; }
+.tile.v8 { background: #7a5c1f; color: #fff6e6; }
+.tile.v16 { background: #a96f12; color: #ffffff; }
+.tile.v32 { background: #d9480f; color: #ffffff; }
+.tile.v64 { background: #e8930c; color: #241a05; }
+.tile.v128 { background: #2f9e44; color: #ffffff; }
+.tile.v256 { background: #238636; color: #ffffff; }
+.tile.v512 { background: #d6332f; color: #ffffff; }
+.tile.v1024 { background: #b02a26; color: #ffffff; }
+.tile.v2048 { background: #e8930c; color: #241a05; box-shadow: 0 0 24px rgba(232, 147, 12, .5); }
+.tile.v4096 { background: #d9480f; color: #ffffff; box-shadow: 0 0 28px rgba(217, 72, 15, .5); }
 
 @media (max-width: 600px) {
-
-    .board2048 {
-        gap: 7px;
-        padding: 7px;
-    }
+    .board2048 { gap: 7px; padding: 7px; }
 }

@@ -2,96 +2,45 @@
  * Tic-Tac-Toe
  *
  * Nine squares, two colours, one highlight for the line that
- * ended the round.
+ * ended the round. X is signal orange, O is green.
  */
 
 .ttt-board {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 8px;
-
     width: 100%;
     max-width: 360px;
-
     aspect-ratio: 1 / 1;
 }
 
-
 .ttt-cell {
     display: grid;
-
     place-items: center;
-
     padding: 0;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 10px;
-
-    background:
-        linear-gradient(
-            145deg,
-            #0a1728,
-            #061020
-        );
-
-    color: var(--text);
-
-    font-family: monospace;
-    font-size:
-        clamp(
-            34px,
-            11vw,
-            56px
-        );
-
+    border: 1px solid var(--screen-line);
+    border-radius: 8px;
+    background: var(--screen-2);
+    color: var(--screen-text);
+    font-family: var(--mono);
+    font-size: clamp(34px, 11vw, 56px);
     font-weight: 800;
-
     line-height: 1;
-
     cursor: pointer;
-
-    transition:
-        border-color 150ms ease,
-        background 150ms ease,
-        transform 100ms ease;
+    transition: border-color .15s ease, background .15s ease, transform .1s ease;
 }
-
 
 .ttt-cell:hover:not(.taken) {
-    border-color:
-        var(--border-hover);
-
-    transform:
-        translateY(-2px);
+    border-color: var(--line-strong);
+    transform: translateY(-2px);
 }
 
+.ttt-cell.taken { cursor: default; }
 
-.ttt-cell.taken {
-    cursor: default;
-}
-
-
-.ttt-cell.x {
-    color: var(--blue-light);
-}
-
-
-.ttt-cell.o {
-    color: var(--arc-pink);
-}
-
+.ttt-cell.x { color: var(--accent); }
+.ttt-cell.o { color: var(--green); }
 
 .ttt-cell.win {
-    border-color:
-        var(--blue-light);
-
-    background:
-        rgba(22, 131, 255, 0.18);
+    border-color: var(--arc-amber);
+    background: rgba(232, 147, 12, .18);
 }
-
-
-/* Mobile tweaks live in games.css; nothing extra needed here. */
