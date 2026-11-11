@@ -1,0 +1,3082 @@
+{
+ "generatedAt": "2026-11-11T01:35:41.547Z",
+ "user": {
+  "login": "gnahiak2",
+  "name": "Kaihang",
+  "bio": "Part of @hackclub and @BBSS-Hack-Club",
+  "location": "Singapore",
+  "url": "https://github.com/gnahiak2",
+  "since": "2025-02-15T02:43:59Z",
+  "publicRepos": 61,
+  "followers": 5
+ },
+ "orgs": [
+  {
+   "login": "hackclub",
+   "name": "Hack Club",
+   "url": "https://github.com/hackclub"
+  },
+  {
+   "login": "BBSS-Hack-Club",
+   "name": "BBSS Hack Club",
+   "url": "https://github.com/BBSS-Hack-Club"
+  }
+ ],
+ "pinned": [
+  {
+   "name": "getou_",
+   "owner": "gnahiak2",
+   "url": "https://github.com/gnahiak2/getou_"
+  },
+  {
+   "name": "nibble",
+   "owner": "gnahiak2",
+   "url": "https://github.com/gnahiak2/nibble"
+  },
+  {
+   "name": "esprog",
+   "owner": "gnahiak2",
+   "url": "https://github.com/gnahiak2/esprog"
+  },
+  {
+   "name": "lifesim",
+   "owner": "gnahiak2",
+   "url": "https://github.com/gnahiak2/lifesim"
+  },
+  {
+   "name": "explosivegf-serverside",
+   "owner": "gnahiak2",
+   "url": "https://github.com/gnahiak2/explosivegf-serverside"
+  },
+  {
+   "name": "explosivegf",
+   "owner": "senkyte",
+   "url": "https://github.com/senkyte/explosivegf"
+  }
+ ],
+ "year": {
+  "total": 479,
+  "from": "2025-11-09",
+  "to": "2026-11-11",
+  "days": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   25,
+   10,
+   0,
+   1,
+   0,
+   0,
+   15,
+   0,
+   4,
+   6,
+   1,
+   11,
+   0,
+   5,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   4,
+   0,
+   0,
+   7,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   3,
+   2,
+   11,
+   7,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   2,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   14,
+   0,
+   0,
+   2,
+   1,
+   0,
+   0,
+   0,
+   0,
+   3,
+   5,
+   1,
+   0,
+   4,
+   3,
+   1,
+   5,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   7,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   8,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   19,
+   1,
+   3,
+   0,
+   0,
+   10,
+   3,
+   5,
+   2,
+   2,
+   9,
+   5,
+   3,
+   2,
+   0,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   2,
+   0,
+   2,
+   2,
+   0,
+   0,
+   0,
+   3,
+   0,
+   0,
+   2,
+   1,
+   2,
+   0,
+   15,
+   8,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   10,
+   1,
+   1,
+   7,
+   2,
+   3,
+   2,
+   3,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   6,
+   3,
+   2,
+   6,
+   0,
+   2,
+   0,
+   0,
+   0,
+   2,
+   4,
+   0,
+   0,
+   2,
+   8,
+   0,
+   0,
+   0,
+   4,
+   3,
+   1,
+   0,
+   2,
+   0,
+   3,
+   1,
+   0,
+   5,
+   0,
+   0,
+   2,
+   0,
+   0,
+   0,
+   1,
+   4,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   4,
+   0,
+   0,
+   3,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   2,
+   0,
+   0,
+   3,
+   0,
+   2,
+   4,
+   0,
+   0,
+   0,
+   2,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   10,
+   0,
+   1,
+   4,
+   4,
+   0,
+   4,
+   0,
+   1,
+   2,
+   0,
+   0,
+   0,
+   0,
+   1,
+   19,
+   0,
+   2,
+   0
+  ]
+ },
+ "repos": [
+  {
+   "name": "nibble",
+   "description": "",
+   "url": "https://github.com/gnahiak2/nibble",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Python",
+   "stars": 2,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-07-07T07:53:23Z",
+   "pushedAt": "2026-11-10T14:16:59Z",
+   "languages": [
+    [
+     "Python",
+     85,
+     "#3572A5"
+    ],
+    [
+     "Dockerfile",
+     15,
+     "#384d54"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "Nibble"
+    },
+    {
+     "t": "p",
+     "text": "A Slack bot for #kaihangs-shitdump, built with Slack Bolt for Python and running over Socket Mode."
+    },
+    {
+     "t": "p",
+     "text": "Name contributed by @Koy. Canonically a Catenby."
+    },
+    {
+     "t": "h",
+     "text": "What it does"
+    },
+    {
+     "t": "li",
+     "text": "Welcomes new members — greets anyone joining the channel and pings the owner."
+    },
+    {
+     "t": "li",
+     "text": "Auto-manages the ping group — adds new members to a Slack user group so they get pinged, and shows them an ephemeral message with an Opt out of pings button to leave it again."
+    },
+    {
+     "t": "li",
+     "text": "Says goodbye when someone leaves the channel."
+    },
+    {
+     "t": "li",
+     "text": "Answers slack id — replies with your Slack user ID when you type what is my slack id, slack id, or my slack id."
+    },
+    {
+     "t": "h",
+     "text": "Requirements"
+    },
+    {
+     "t": "li",
+     "text": "Python 3.10+"
+    },
+    {
+     "t": "li",
+     "text": "A Slack app with Socket Mode enabled and the manifest in manifest.yaml"
+    },
+    {
+     "t": "h",
+     "text": "Setup"
+    },
+    {
+     "t": "h",
+     "text": "1. Create the Slack app"
+    },
+    {
+     "t": "p",
+     "text": "Create a Slack app from your workspace's app page and apply the configuration in manifest.yaml. It requests these bot scopes:"
+    },
+    {
+     "t": "p",
+     "text": "Enable Socket Mode, then install the app to your workspace and copy the Bot User OAuth Token (xoxb-...). Generate an App-Level Token with the connections:write scope (xapp-...) and grab the Signing Secret from Basic Information."
+    },
+    {
+     "t": "h",
+     "text": "2. Configure environment variables"
+    }
+   ]
+  },
+  {
+   "name": "ram-altman-macos",
+   "description": "Monitors your RAM and reports any \"quite terrible\" unused capacity directly to the CEO of OpenAI.",
+   "url": "https://github.com/gnahiak2/ram-altman-macos",
+   "homepage": "https://ram-altman.lol",
+   "fork": true,
+   "archived": false,
+   "language": "Shell",
+   "stars": 0,
+   "forks": 0,
+   "license": "Unlicense",
+   "topics": [],
+   "createdAt": "2026-11-08T15:51:45Z",
+   "pushedAt": "2026-11-08T16:07:13Z"
+  },
+  {
+   "name": "nibble-border-control",
+   "description": "nibble, but border control",
+   "url": "https://github.com/gnahiak2/nibble-border-control",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "TypeScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-10-15T08:07:22Z",
+   "pushedAt": "2026-11-08T13:59:48Z",
+   "languages": [
+    [
+     "TypeScript",
+     98.7,
+     "#3178c6"
+    ],
+    [
+     "Dockerfile",
+     1.3,
+     "#384d54"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "nibble-border-control"
+    },
+    {
+     "t": "p",
+     "text": "a slack bot that guards a channel."
+    },
+    {
+     "t": "code",
+     "text": "someone joins the welcome channel\n  └─▶ bot posts a welcome message + [ Fill in entry form ] button\n        └─▶ applicant opens the form: name, how they found you, why they want in,\n            then the Channel Confidentiality Agreement: tick \"I agree to be bound by it\" + type full name\n              ├─ not signed ─▶ form won't submit (they can just cancel)\n              └─ signed     ─▶ logged to PROMISES_FILE + a copy DMed to them\n                                 OWNER_SLACK_ID set?  ─▶ DMed to you with Approve / Deny\n                                 not set?             ─▶ auto-approved"
+    },
+    {
+     "t": "h",
+     "text": "the agreement"
+    },
+    {
+     "t": "p",
+     "text": "a full written contract in the entry form, the Channel Confidentiality Agreement: parties, definitions of what's confidential, obligations (no screenshots, forwarding, retelling, posting, AI tools), permitted sharing of clearly non-sensitive stuff using common sense, exceptions, consideration (channel access), breach (permanent removal), duration, changes, and signature. applicants tick \"I agree to be bound\" and type their full name. wording lives in PROMISE_POINTS in src/agreement.ts; bump PROMISE_VERSION when you change it."
+    },
+    {
+     "t": "p",
+     "text": "each promise is one JSON line in PROMISES_FILE (default data/promises.jsonl): slack user and team id, the name they gave, the full name they signed with, when, and the exact text they agreed to. if it can't be saved they aren't let in."
+    },
+    {
+     "t": "h",
+     "text": "setup"
+    },
+    {
+     "t": "li",
+     "text": "create the app at → create new app → from a manifest →"
+    },
+    {
+     "t": "p",
+     "text": "paste…"
+    },
+    {
+     "t": "li",
+     "text": "token…"
+    }
+   ]
+  },
+  {
+   "name": "gorkie",
+   "description": "",
+   "url": "https://github.com/gnahiak2/gorkie",
+   "homepage": "",
+   "fork": true,
+   "archived": false,
+   "language": "TypeScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "AGPL-3.0",
+   "topics": [],
+   "createdAt": "2026-08-22T13:13:56Z",
+   "pushedAt": "2026-11-07T18:19:50Z"
+  },
+  {
+   "name": "computer",
+   "description": "Your Computer. Anywhere.",
+   "url": "https://github.com/gnahiak2/computer",
+   "homepage": "https://openwebui.com/computer",
+   "fork": true,
+   "archived": false,
+   "language": "Python",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-11-07T17:21:59Z",
+   "pushedAt": "2026-11-07T17:24:22Z"
+  },
+  {
+   "name": "acp-connector-slack",
+   "description": "Self-hosted Slack coding-agent bridge and ACP operations dashboard",
+   "url": "https://github.com/gnahiak2/acp-connector-slack",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "TypeScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-11-02T04:28:45Z",
+   "pushedAt": "2026-11-02T04:28:51Z",
+   "languages": [
+    [
+     "TypeScript",
+     96.4,
+     "#3178c6"
+    ],
+    [
+     "CSS",
+     3.2,
+     "#663399"
+    ],
+    [
+     "Dockerfile",
+     0.2,
+     "#384d54"
+    ],
+    [
+     "JavaScript",
+     0.1,
+     "#f1e05a"
+    ],
+    [
+     "HTML",
+     0.1,
+     "#e34c26"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "Slackboard"
+    },
+    {
+     "t": "p",
+     "text": "Self-hosted Slack coding-agent bridge and operations dashboard. Slack is the first chat transport; the transport boundary is isolated so another transport can be added without changing session orchestration."
+    },
+    {
+     "t": "li",
+     "text": "Persistent sessions keyed by Slack team/channel/thread (and dashboard-created sessions)"
+    },
+    {
+     "t": "li",
+     "text": "ACP agent subprocesses over stdio JSON-RPC, using the official TypeScript SDK"
+    },
+    {
+     "t": "li",
+     "text": "Durable SQLite job queue and ordered event log with SSE replay"
+    },
+    {
+     "t": "li",
+     "text": "Exact ACP permission options bound to session, requester, tool call and expiry"
+    },
+    {
+     "t": "li",
+     "text": "Curated project memory, versioned SKILL.md skills, MCP configuration, GitHub App draft-PR workflow"
+    },
+    {
+     "t": "li",
+     "text": "Operation-first React dashboard served same-origin by the backend"
+    },
+    {
+     "t": "li",
+     "text": "Local trusted runner and isolated-container runner from the same codebase"
+    },
+    {
+     "t": "h",
+     "text": "Status"
+    },
+    {
+     "t": "p",
+     "text": "This repository is a complete first implementation with unit, protocol, backend and dashboard component tests. The following were exercised locally:"
+    },
+    {
+     "t": "li",
+     "text": "the full HTTP API, dashboard auth/CSRF/origin checks, session creation, prompt execution, event replay and SSE"
+    },
+    {
+     "t": "li",
+     "text": "a controllable fake ACP subprocess for streaming, typed updates, permission selection, invalid option rejection, cancellation, crash, authentication-required, session load/replacement, filesystem containment, terminal callbacks and malformed stdout"
+    },
+    {
+     "t": "li",
+     "text": "the fake agent driving a real dashboard-created session through the job queue and SQLite event log"
+    },
+    {
+     "t": "li",
+     "text": "Docker image build and container smoke check (health, static dashboard, login)"
+    },
+    {
+     "t": "p",
+     "text": "Not verified in this working copy because credentials…"
+    }
+   ]
+  },
+  {
+   "name": "random-platformer",
+   "description": "random platformer",
+   "url": "https://github.com/gnahiak2/random-platformer",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "JavaScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-09-13T08:18:36Z",
+   "pushedAt": "2026-10-30T06:31:30Z",
+   "languages": [
+    [
+     "JavaScript",
+     46.2,
+     "#f1e05a"
+    ],
+    [
+     "GDScript",
+     28.7,
+     "#355570"
+    ],
+    [
+     "HTML",
+     25.1,
+     "#e34c26"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "Goog"
+    },
+    {
+     "t": "p",
+     "text": "Goog simulator"
+    },
+    {
+     "t": "p",
+     "text": "based of Hack Club Jumpstart but background is the goog emoji"
+    }
+   ]
+  },
+  {
+   "name": "carbon-city",
+   "description": "A browser city builder that teaches energy use and global warming — Python simulation + WebGPU client.",
+   "url": "https://github.com/gnahiak2/carbon-city",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Python",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-10-28T03:33:01Z",
+   "pushedAt": "2026-10-28T03:47:55Z",
+   "languages": [
+    [
+     "Python",
+     45.9,
+     "#3572A5"
+    ],
+    [
+     "JavaScript",
+     39.9,
+     "#f1e05a"
+    ],
+    [
+     "CSS",
+     10.9,
+     "#663399"
+    ],
+    [
+     "WGSL",
+     1.9,
+     "#1a5e9a"
+    ],
+    [
+     "HTML",
+     1.3,
+     "#e34c26"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "Carbon City"
+    },
+    {
+     "t": "h",
+     "text": "video demo"
+    },
+    {
+     "t": "p",
+     "text": "https://drive.google.com/file/d/1vY3an_2SgxiR-yqRD1140w4SOSXNLob1/view?usp=sharing"
+    },
+    {
+     "t": "p",
+     "text": "A browser-playable city builder that teaches energy use and global warming. The simulation is authoritative Python. The 3D view is plain ES modules and WGSL on WebGPU, served by Flask. There is no Node, bundler, pygame or WASM pipeline."
+    },
+    {
+     "t": "h",
+     "text": "Run it"
+    },
+    {
+     "t": "p",
+     "text": "Tested with Homebrew Python 3.15 on macOS. Python 3.12+ should work."
+    },
+    {
+     "t": "code",
+     "text": "/opt/homebrew/bin/python3 -m venv .venv\n.venv/bin/python -m pip install -r requirements.txt\n.venv/bin/python run.py"
+    },
+    {
+     "t": "p",
+     "text": "Open http://127.0.0.1:8000."
+    },
+    {
+     "t": "p",
+     "text": "Use a current Chrome or Edge, or Safari 26+. Carbon City shows a clear \"WebGPU is not available in this browser\" message with a browser hint if the canvas cannot start."
+    },
+    {
+     "t": "p",
+     "text": "Optional flags: --host 0.0.0.0 --port 8080 (defaults are 127.0.0.1:8000)."
+    },
+    {
+     "t": "h",
+     "text": "How to play"
+    },
+    {
+     "t": "li",
+     "text": "Eco Points come from clean power, parks and surviving forest. Spend them"
+    },
+    {
+     "t": "p",
+     "text": "on clean/premium buildings, materials, land, and eventually a missile silo."
+    },
+    {
+     "t": "li",
+     "text": "Money comes from population tax, shops and factories. Materials come"
+    },
+    {
+     "t": "p",
+     "text": "from factories and Eco Point purchases."
+    },
+    {
+     "t": "li",
+     "text": "Coal and gas are cheap and make lots of power, but they add CO2. CO2 raises"
+    }
+   ]
+  },
+  {
+   "name": "studious-octo-waffle",
+   "description": "",
+   "url": "https://github.com/gnahiak2/studious-octo-waffle",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Python",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-10-27T04:40:51Z",
+   "pushedAt": "2026-10-27T04:42:42Z",
+   "languages": [
+    [
+     "Python",
+     36.3,
+     "#3572A5"
+    ],
+    [
+     "CSS",
+     27.9,
+     "#663399"
+    ],
+    [
+     "JavaScript",
+     18.8,
+     "#f1e05a"
+    ],
+    [
+     "HTML",
+     17,
+     "#e34c26"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "🌍 Green Footprints"
+    },
+    {
+     "t": "p",
+     "text": "A friendly website that shows secondary school students how much CO2 their day made."
+    },
+    {
+     "t": "h",
+     "text": "Run it"
+    },
+    {
+     "t": "code",
+     "text": "python3 -m venv .venv\n.venv/bin/pip install -r requirements.txt\n.venv/bin/python server.py"
+    },
+    {
+     "t": "p",
+     "text": "Open http://localhost:5000 — it also works on your phone over the same Wi-Fi at http://:5000."
+    },
+    {
+     "t": "h",
+     "text": "What's in it"
+    },
+    {
+     "t": "li",
+     "text": "Calculator — travel mode (walk, cycle, bus, MRT, car), distance, air-con hours, meat meals"
+    },
+    {
+     "t": "li",
+     "text": "Input checking — letters, empty boxes and negative numbers get a friendly message, both instantly as you type and again on the server"
+    },
+    {
+     "t": "li",
+     "text": "Tip — one suggestion picked from whatever contributed most to your day"
+    },
+    {
+     "t": "li",
+     "text": "What if…? — three greener swaps for the same day, with the CO2 saved on each"
+    },
+    {
+     "t": "li",
+     "text": "Your week — a 7-day bar chart, average, total, days logged and a streak counter"
+    },
+    {
+     "t": "li",
+     "text": "Stickers and points — awarded for light days, streaks and beating your own average"
+    },
+    {
+     "t": "li",
+     "text": "Share card — a downloadable PNG summary plus copyable text"
+    },
+    {
+     "t": "p",
+     "text": "Your history is saved in data/history.json, keyed by a random browser cookie. No sign-up, no personal data."
+    },
+    {
+     "t": "h",
+     "text": "Files"
+    },
+    {
+     "t": "h",
+     "text": "How the numbers work"
+    }
+   ]
+  },
+  {
+   "name": "day2",
+   "description": "",
+   "url": "https://github.com/gnahiak2/day2",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Python",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-10-27T01:34:54Z",
+   "pushedAt": "2026-10-27T01:37:58Z",
+   "languages": [
+    [
+     "Python",
+     100,
+     "#3572A5"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "day2"
+    },
+    {
+     "t": "h",
+     "text": "all of them are fixed dont care about the names"
+    }
+   ]
+  },
+  {
+   "name": "usage-tracker",
+   "description": "",
+   "url": "https://github.com/gnahiak2/usage-tracker",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Swift",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-10-23T09:10:53Z",
+   "pushedAt": "2026-10-24T03:26:26Z",
+   "languages": [
+    [
+     "Swift",
+     97.8,
+     "#F05138"
+    ],
+    [
+     "Shell",
+     2.2,
+     "#89e051"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "Usage Tracker"
+    },
+    {
+     "t": "p",
+     "text": "A native macOS menu bar app showing how much of each AI coding service's 5-hour and weekly limits you've used, and when they reset. Swift and SwiftUI, no Electron, no background browser."
+    },
+    {
+     "t": "h",
+     "text": "What it reads"
+    },
+    {
+     "t": "p",
+     "text": "The app only asks CLIs that are installed. Missing CLIs stay out of the menu bar and are listed in the panel."
+    },
+    {
+     "t": "h",
+     "text": "Build and run"
+    },
+    {
+     "t": "code",
+     "text": "swift build\nswift test\nscripts/build-app.sh              # this Mac's architecture\nscripts/build-app.sh --universal  # Apple Silicon + Intel\nopen dist/UsageTracker.app"
+    },
+    {
+     "t": "p",
+     "text": "scripts/build-app.sh builds a release binary, assembles dist/UsageTracker.app with LSUIElement, generates the icon, copies the sandbox profile resource bundle, and ad-hoc signs it."
+    },
+    {
+     "t": "p",
+     "text": "The build is ad-hoc signed, not Developer ID signed or notarized. A copy on another Mac may need right-click Open or xattr -d com.apple.quarantine. Smooth double-click distribution requires the paid Apple Developer Program."
+    },
+    {
+     "t": "h",
+     "text": "Optional: live Claude limits"
+    },
+    {
+     "t": "p",
+     "text": "Claude Code's headless /usage output does not always include plan windows. For live numbers, let Claude Code hand its status-line JSON to this app:"
+    },
+    {
+     "t": "code",
+     "text": "\"statusLine\": {\n  \"type\": \"command\",\n  \"command\": \"/Applications/UsageTracker.app/Contents/MacOS/UsageTracker --statusline\",\n  \"refreshInterval\": 60\n}"
+    },
+    {
+     "t": "p",
+     "text": "Put that in ~/.claude/settings.json. It replaces any status line you already have, and the app never edits your settings. The helper reads only rate_limits.five_hour and rate_limits.seven_day, writes percentages and reset times to…"
+    },
+    {
+     "t": "h",
+     "text": "Settings"
+    },
+    {
+     "t": "p",
+     "text": "Open the gear in the panel…"
+    },
+    {
+     "t": "li",
+     "text": "Gener…"
+    }
+   ]
+  },
+  {
+   "name": "token-metrics",
+   "description": "Real-time tokens/second, time to first token, and session/lifetime averages for Command Code",
+   "url": "https://github.com/gnahiak2/token-metrics",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "TypeScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-10-24T00:59:38Z",
+   "pushedAt": "2026-10-24T01:40:59Z",
+   "languages": [
+    [
+     "TypeScript",
+     100,
+     "#3178c6"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "Token metrics"
+    },
+    {
+     "t": "p",
+     "text": "A Command Code mod that shows throughput and latency while the agent works:"
+    },
+    {
+     "t": "li",
+     "text": "live tokens/second — an estimate (~) from streamed characters, refreshed while a request runs"
+    },
+    {
+     "t": "li",
+     "text": "time to first token (TTFT) — request start to the first observable generated content (text, reasoning, or a tool call)"
+    },
+    {
+     "t": "li",
+     "text": "last request — provider-reported output tokens over request wall time, including TTFT"
+    },
+    {
+     "t": "li",
+     "text": "session and lifetime averages — token-weighted throughput and mean TTFT"
+    },
+    {
+     "t": "p",
+     "text": "The widget sits above the prompt. /token-stats prints the full report, including per-model breakdowns."
+    },
+    {
+     "t": "h",
+     "text": "Install"
+    },
+    {
+     "t": "p",
+     "text": "From npm (also consumed by pnpm, which uses the npm registry):"
+    },
+    {
+     "t": "code",
+     "text": "cmd mods add token-metrics"
+    },
+    {
+     "t": "p",
+     "text": "From GitHub:"
+    },
+    {
+     "t": "code",
+     "text": "cmd mods add gnahiak2/token-metrics"
+    },
+    {
+     "t": "p",
+     "text": "Or copy this folder to ~/.commandcode/mods/token-metrics/ and let the user-mod scan pick it up. Send /reload after changing the source."
+    },
+    {
+     "t": "h",
+     "text": "Usage"
+    },
+    {
+     "t": "code",
+     "text": "/token-stats                    full report\n/token-stats reset session      clear this session, keep lifetime\n/token-stats reset all          clear both (asks for confirmation)"
+    },
+    {
+     "t": "p",
+     "text": "Send /reload after editing the mod."
+    }
+   ]
+  },
+  {
+   "name": "claudecodeclone",
+   "description": "claudecodeclone",
+   "url": "https://github.com/gnahiak2/claudecodeclone",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Rust",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-10-22T06:45:39Z",
+   "pushedAt": "2026-10-22T06:47:00Z",
+   "languages": [
+    [
+     "Rust",
+     100,
+     "#dea584"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "relay-code"
+    },
+    {
+     "t": "p",
+     "text": "relay is a three-tier coding agent written in Rust. It separates thinking, editing and verification so that a model never grades its own work."
+    },
+    {
+     "t": "li",
+     "text": "Tier 1 — planner (read-only). Inspects the repository with list_files,"
+    },
+    {
+     "t": "p",
+     "text": "read_file and search, then returns a structured plan. It has no write, shell or network tools."
+    },
+    {
+     "t": "li",
+     "text": "Tier 2 — executor (staged workspace). A native Rust model/tool loop edits"
+    },
+    {
+     "t": "p",
+     "text": "an isolated copy of the repository through hash-checked patches. It cannot run shell commands or reach the original checkout."
+    },
+    {
+     "t": "li",
+     "text": "Tier 3 — evaluator (Docker). Runs the approved test argv inside a"
+    },
+    {
+     "t": "p",
+     "text": "hardened container against a fresh copy of the staged snapshot. The verdict is deterministic process exit status, not a model opinion."
+    },
+    {
+     "t": "p",
+     "text": "The harness owns approvals, budgets, sessions, evidence and the final apply. It supports local Ollama and hosted OpenAI, Anthropic, Cohere and OpenAI-compatible endpoints."
+    },
+    {
+     "t": "h",
+     "text": "Requirements"
+    },
+    {
+     "t": "li",
+     "text": "Rust 1.88 or newer (edition 2024; let-chains are used)."
+    },
+    {
+     "t": "li",
+     "text": "For evaluation: Docker (or a compatible runtime), a running daemon, and the"
+    },
+    {
+     "t": "p",
+     "text": "test images already pulled."
+    },
+    {
+     "t": "li",
+     "text": "For local models: Ollama running at http://localhost:11434."
+    },
+    {
+     "t": "p",
+     "text": "Hosted providers need valid credentials and may charge money. There is no payment bypass, and no provider is contacted without a configured key."
+    },
+    {
+     "t": "h",
+     "text": "Build"
+    }
+   ]
+  },
+  {
+   "name": "verity-slack",
+   "description": "",
+   "url": "https://github.com/gnahiak2/verity-slack",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "TypeScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "AGPL-3.0",
+   "topics": [],
+   "createdAt": "2026-10-16T00:43:14Z",
+   "pushedAt": "2026-10-16T02:56:06Z",
+   "languages": [
+    [
+     "TypeScript",
+     100,
+     "#3178c6"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "Verity for Slack"
+    },
+    {
+     "t": "p",
+     "text": "A Slack app that is Verity™ — the yellow smiley orb from ThatMob's Minecraft horror series Something is Knocking at Your Door.... It greets you as your \"personal helper friend,\" claims to know everything, and over roughly six days its mask slips: helpful assistant → uncanny watcher → open menace → the Verity Demon."
+    },
+    {
+     "t": "p",
+     "text": "Replies are generated by the Command Code Provider API."
+    },
+    {
+     "t": "h",
+     "text": "Setup"
+    },
+    {
+     "t": "li",
+     "text": "Create the Slack app — go to → Create New App →"
+    },
+    {
+     "t": "p",
+     "text": "From an app manifest → pick this repo's manifest.json."
+    },
+    {
+     "t": "li",
+     "text": "Enable Socket Mode — Socket Mode → enable, then App-Level Tokens → create one with"
+    },
+    {
+     "t": "p",
+     "text": "the connections:write scope. That is your SLACK_APP_TOKEN (xapp-…)."
+    },
+    {
+     "t": "li",
+     "text": "Install to workspace — OAuth & Permissions → Install to Workspace. Copy the"
+    },
+    {
+     "t": "p",
+     "text": "Bot User OAuth Token as SLACK_BOT_TOKEN (xoxb-…)."
+    },
+    {
+     "t": "li",
+     "text": "Get a Command Code API key — Studio → API keys. Every plan except Go can call the"
+    },
+    {
+     "t": "p",
+     "text": "Provider API. That is COMMANDCODE_API_KEY."
+    },
+    {
+     "t": "li",
+     "text": "Configure and run"
+    },
+    {
+     "t": "code",
+     "text": "   cp .env.example .env   # fill in SLACK_BOT_TOKEN, SLACK_APP_TOKEN, COMMANDCODE_API_KEY\n   npm install\n   npm run dev"
+    },
+    {
+     "t": "li",
+     "text": "Say hello — invite Verity to a channel (/invite @Verity) and @mention it, or DM it."
+    },
+    {
+     "t": "p",
+     "text": "npm run typecheck and npm test cover the phase/day logic and the request shaping."
+    }
+   ]
+  },
+  {
+   "name": "firehose",
+   "description": "hack club firehose",
+   "url": "https://github.com/gnahiak2/firehose",
+   "homepage": "",
+   "fork": true,
+   "archived": false,
+   "language": "TypeScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-10-05T04:28:02Z",
+   "pushedAt": "2026-10-05T05:50:19Z"
+  },
+  {
+   "name": "open-webui",
+   "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+   "url": "https://github.com/gnahiak2/open-webui",
+   "homepage": "https://openwebui.com",
+   "fork": true,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-10-02T06:04:07Z",
+   "pushedAt": "2026-10-02T04:50:55Z"
+  },
+  {
+   "name": "benchmarkapp",
+   "description": "what do you think?",
+   "url": "https://github.com/gnahiak2/benchmarkapp",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 1,
+   "license": "GPL-3.0",
+   "topics": [],
+   "createdAt": "2026-08-30T07:26:43Z",
+   "pushedAt": "2026-09-29T23:48:31Z",
+   "languages": [],
+   "readme": [
+    {
+     "t": "h",
+     "text": "benchmarkwebsite"
+    },
+    {
+     "t": "p",
+     "text": "what do you think?"
+    }
+   ]
+  },
+  {
+   "name": "gnahiak2.github.io",
+   "description": "Personal portfolio website built with HTML, CSS, and JavaScript. Features a responsive layout, project showcase, and smooth scrolling interactions.",
+   "url": "https://github.com/gnahiak2/gnahiak2.github.io",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "JavaScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-04-20T09:31:38Z",
+   "pushedAt": "2026-09-28T06:15:10Z",
+   "languages": [
+    [
+     "JavaScript",
+     67.9,
+     "#f1e05a"
+    ],
+    [
+     "CSS",
+     17.2,
+     "#663399"
+    ],
+    [
+     "HTML",
+     14.9,
+     "#e34c26"
+    ]
+   ],
+   "readme": []
+  },
+  {
+   "name": "orphfetch",
+   "description": "neo and fastfetch but rust ",
+   "url": "https://github.com/gnahiak2/orphfetch",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Rust",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-08-09T09:17:24Z",
+   "pushedAt": "2026-09-22T00:49:52Z",
+   "languages": [
+    [
+     "Rust",
+     100,
+     "#dea584"
+    ],
+    [
+     "RenderScript",
+     0,
+     ""
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "WORK IN PROGRESS THIS IS A TEMPLATE"
+    },
+    {
+     "t": "h",
+     "text": "SUPER AWESOME PROJECT!!!"
+    },
+    {
+     "t": "p",
+     "text": "hey! this is text explaining what my awesome project is :) here's an AWESOME gif of my project!"
+    },
+    {
+     "t": "h",
+     "text": "HOW THIS WAS MADE"
+    },
+    {
+     "t": "p",
+     "text": "example for this site this project was made with astro using the starlight template :D"
+    },
+    {
+     "t": "h",
+     "text": "heres how to run the project :)"
+    },
+    {
+     "t": "li",
+     "text": "Clone the source code to your device"
+    },
+    {
+     "t": "code",
+     "text": "git clone https://github.com/vivithequeen/horizons-guides.git"
+    },
+    {
+     "t": "li",
+     "text": "Install the project's dependencies"
+    },
+    {
+     "t": "code",
+     "text": "npm install"
+    },
+    {
+     "t": "li",
+     "text": "Start the development server on localhost:4321"
+    },
+    {
+     "t": "code",
+     "text": "npm run dev"
+    },
+    {
+     "t": "li",
+     "text": "Build the site to /dist"
+    },
+    {
+     "t": "code",
+     "text": "npm run build"
+    },
+    {
+     "t": "p",
+     "text": "and be joyous!"
+    },
+    {
+     "t": "h",
+     "text": "AI DISCLOSURE"
+    }
+   ]
+  },
+  {
+   "name": "HCCore",
+   "description": "🔌 Main plugin for the Hack Club Minecraft server",
+   "url": "https://github.com/gnahiak2/HCCore",
+   "homepage": "https://mc.hackclub.com",
+   "fork": true,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-09-11T13:15:32Z",
+   "pushedAt": "2026-09-19T02:11:42Z"
+  },
+  {
+   "name": "esprog",
+   "description": "",
+   "url": "https://github.com/gnahiak2/esprog",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Rust",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-05-29T09:33:12Z",
+   "pushedAt": "2026-09-12T08:44:06Z",
+   "languages": [
+    [
+     "Rust",
+     100,
+     "#dea584"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "ESProg"
+    },
+    {
+     "t": "p",
+     "text": "ESProg turns an ESP32-S3 into a cheap SPI flash programmer."
+    },
+    {
+     "t": "code",
+     "text": "Computer\n↓ USB\nESP32-S3\n↓ SPI\nFlash Chip"
+    },
+    {
+     "t": "h",
+     "text": "Current Features"
+    },
+    {
+     "t": "p",
+     "text": "Rust firmware Rust CLI Native USB macOS + Linux no_std Device detection READ WRITE ERASE FILL Dummy 64 KiB memory"
+    },
+    {
+     "t": "h",
+     "text": "Next"
+    },
+    {
+     "t": "p",
+     "text": "Real SPI flash support JEDEC detection Sector erase Page programming Verify .bin flashing Progress bars"
+    },
+    {
+     "t": "h",
+     "text": "Releases"
+    },
+    {
+     "t": "p",
+     "text": "Prebuilt binaries and firmware:"
+    },
+    {
+     "t": "p",
+     "text": "https://github.com/gnahiak2/esprog/releases/latest"
+    },
+    {
+     "t": "h",
+     "text": "AI Disclosure"
+    },
+    {
+     "t": "p",
+     "text": "AI helped with compiler errors, esp-hal, and code organization."
+    },
+    {
+     "t": "p",
+     "text": "The project design, implementation, testing, debugging, and getting everything working was done by me."
+    }
+   ]
+  },
+  {
+   "name": "launchly",
+   "description": "stuff",
+   "url": "https://github.com/gnahiak2/launchly",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Rust",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-09-07T03:13:51Z",
+   "pushedAt": "2026-09-07T14:24:37Z",
+   "languages": [
+    [
+     "Rust",
+     74.6,
+     "#dea584"
+    ],
+    [
+     "TypeScript",
+     15.1,
+     "#3178c6"
+    ],
+    [
+     "HTML",
+     6.4,
+     "#e34c26"
+    ],
+    [
+     "Dockerfile",
+     3.9,
+     "#384d54"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "Launchly"
+    },
+    {
+     "t": "p",
+     "text": "Launchly deploys vanilla static websites from public Git repositories."
+    },
+    {
+     "t": "code",
+     "text": "public Git repository → clone → check root index.html → run Nginx → health check → live"
+    },
+    {
+     "t": "p",
+     "text": "It does not run repository build scripts and does not support Node, Python, Rust, Dockerfiles, or arbitrary application servers. A deployable repository simply contains index.html at its root, plus any HTML, CSS, JavaScript, images, or fonts it needs."
+    },
+    {
+     "t": "h",
+     "text": "How it works"
+    },
+    {
+     "t": "li",
+     "text": "Validate the repository URL."
+    },
+    {
+     "t": "li",
+     "text": "Shallow-clone the repository."
+    },
+    {
+     "t": "li",
+     "text": "Inspect the actual files and require root index.html."
+    },
+    {
+     "t": "li",
+     "text": "Mount the clone read-only into docker.io/nginxinc/nginx-unprivileged:alpine."
+    },
+    {
+     "t": "li",
+     "text": "Run the site with Podman using resource and privilege limits."
+    },
+    {
+     "t": "li",
+     "text": "Require HTTP 200 on port 8080 before reporting live."
+    },
+    {
+     "t": "p",
+     "text": "No generated Containerfiles, site image builds, Gemini calls, or repository commands are involved."
+    },
+    {
+     "t": "h",
+     "text": "Fedora Linux (recommended)"
+    },
+    {
+     "t": "p",
+     "text": "Fedora uses native Podman; do not use podman machine."
+    },
+    {
+     "t": "code",
+     "text": "sudo dnf install -y git podman curl\nsudo systemctl enable --now podman.socket\n\ngit clone https://github.com/gnahiak2/launchly.git\ncd launchly\nsudo mkdir -p /tmp/launchly\nsudo chmod 777 /tmp/launchly"
+    },
+    {
+     "t": "p",
+     "text": "Expected response:"
+    }
+   ]
+  },
+  {
+   "name": "install-absolutely-nothing",
+   "description": "",
+   "url": "https://github.com/gnahiak2/install-absolutely-nothing",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "TypeScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-09-04T02:18:58Z",
+   "pushedAt": "2026-09-04T02:33:53Z",
+   "languages": [
+    [
+     "TypeScript",
+     100,
+     "#3178c6"
+    ]
+   ],
+   "readme": []
+  },
+  {
+   "name": "frostterm",
+   "description": "A modern, GPU-accelerated terminal for Every Machine™",
+   "url": "https://github.com/gnahiak2/frostterm",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Rust",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-08-08T03:04:53Z",
+   "pushedAt": "2026-08-26T09:44:30Z",
+   "languages": [
+    [
+     "Rust",
+     100,
+     "#dea584"
+    ]
+   ],
+   "readme": []
+  },
+  {
+   "name": "gork-slack",
+   "description": "",
+   "url": "https://github.com/gnahiak2/gork-slack",
+   "homepage": "",
+   "fork": true,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-08-22T13:22:59Z",
+   "pushedAt": "2026-08-22T13:24:41Z"
+  },
+  {
+   "name": "speedtest-rs",
+   "description": "Speedtest but rust",
+   "url": "https://github.com/gnahiak2/speedtest-rs",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Rust",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-08-21T00:44:05Z",
+   "pushedAt": "2026-08-22T05:59:48Z",
+   "languages": [
+    [
+     "Rust",
+     100,
+     "#dea584"
+    ]
+   ],
+   "readme": []
+  },
+  {
+   "name": "hc-dns",
+   "description": "🕹 Manage Hack Club's DNS through a GitHub repository",
+   "url": "https://github.com/gnahiak2/hc-dns",
+   "homepage": "",
+   "fork": true,
+   "archived": false,
+   "language": "YAML",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-06-23T07:43:29Z",
+   "pushedAt": "2026-08-11T08:55:41Z"
+  },
+  {
+   "name": "orphmail",
+   "description": "",
+   "url": "https://github.com/gnahiak2/orphmail",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Rust",
+   "stars": 0,
+   "forks": 0,
+   "license": "GPL-3.0",
+   "topics": [],
+   "createdAt": "2026-07-30T00:49:57Z",
+   "pushedAt": "2026-08-08T02:44:55Z",
+   "languages": [
+    [
+     "Rust",
+     100,
+     "#dea584"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "OrphMail"
+    }
+   ]
+  },
+  {
+   "name": "horizons-arcana-project",
+   "description": "",
+   "url": "https://github.com/gnahiak2/horizons-arcana-project",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "C",
+   "stars": 0,
+   "forks": 1,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-07-31T11:26:56Z",
+   "pushedAt": "2026-08-02T03:11:10Z",
+   "languages": [
+    [
+     "C",
+     59.3,
+     "#555555"
+    ],
+    [
+     "Makefile",
+     22.7,
+     "#427819"
+    ],
+    [
+     "Pawn",
+     15,
+     "#dbb284"
+    ],
+    [
+     "C++",
+     2.7,
+     "#f34b7d"
+    ],
+    [
+     "CSS",
+     0.1,
+     "#663399"
+    ],
+    [
+     "Python",
+     0.1,
+     "#3572A5"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "sg in between"
+    },
+    {
+     "t": "p",
+     "text": "the photo we picked ^^^^"
+    },
+    {
+     "t": "h",
+     "text": "desc"
+    },
+    {
+     "t": "p",
+     "text": "a tourist guide for people who just wanna(or need to) go around on the mrt. you just pick two stations and we give u suggestions for places you can visit on the way from one mrt station to the other!"
+    }
+   ]
+  },
+  {
+   "name": "getou_",
+   "description": "",
+   "url": "https://github.com/gnahiak2/getou_",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "HTML",
+   "stars": 1,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-03-13T11:45:02Z",
+   "pushedAt": "2026-07-10T08:05:51Z",
+   "languages": [
+    [
+     "HTML",
+     100,
+     "#e34c26"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "getou_"
+    },
+    {
+     "t": "p",
+     "text": "Its pretty much a hackpad but i made it myself"
+    },
+    {
+     "t": "p",
+     "text": "Here's the Zine!"
+    },
+    {
+     "t": "p",
+     "text": "( This needs manual review cuz fallout project )"
+    },
+    {
+     "t": "h",
+     "text": "HOW THIS WAS MADE"
+    },
+    {
+     "t": "p",
+     "text": "Firmware was made in C via qmk, the accompanying app was made in swift with the help of chatgpt"
+    },
+    {
+     "t": "h",
+     "text": "Here's how to compile and flash the project"
+    },
+    {
+     "t": "li",
+     "text": "Clone the source code to your device"
+    },
+    {
+     "t": "code",
+     "text": "git clone https://github.com/gnahiak2/getou_.git\ncd getou_"
+    },
+    {
+     "t": "li",
+     "text": "Compile firmware"
+    },
+    {
+     "t": "code",
+     "text": "qmk compile -kb getou_ -km default"
+    },
+    {
+     "t": "li",
+     "text": "Plug in your USB-C Cable while holding the Boot button (marked B)"
+    },
+    {
+     "t": "li",
+     "text": "Drag the .uf2 file into the RP2040 and you're done!"
+    },
+    {
+     "t": "h",
+     "text": "AI DISCLOSURE"
+    },
+    {
+     "t": "p",
+     "text": "AI was used for QMK"
+    },
+    {
+     "t": "h",
+     "text": "Images"
+    }
+   ]
+  },
+  {
+   "name": "qmk_firmware",
+   "description": "Open-source keyboard firmware for Atmel AVR and Arm USB families",
+   "url": "https://github.com/gnahiak2/qmk_firmware",
+   "homepage": "https://qmk.fm",
+   "fork": true,
+   "archived": false,
+   "language": "C",
+   "stars": 0,
+   "forks": 0,
+   "license": "GPL-2.0",
+   "topics": [],
+   "createdAt": "2026-03-22T11:58:10Z",
+   "pushedAt": "2026-07-10T06:25:20Z"
+  },
+  {
+   "name": "CH341A-to-ESP32-S3-bridge",
+   "description": "",
+   "url": "https://github.com/gnahiak2/CH341A-to-ESP32-S3-bridge",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "CMake",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-07-02T03:32:36Z",
+   "pushedAt": "2026-07-05T08:01:12Z",
+   "languages": [
+    [
+     "CMake",
+     80.1,
+     "#DA3434"
+    ],
+    [
+     "C",
+     14.6,
+     "#555555"
+    ],
+    [
+     "C++",
+     5.3,
+     "#f34b7d"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "CH341A-to-ESP32-S3-bridge"
+    }
+   ]
+  },
+  {
+   "name": "some-random-usb-to-nvme-ssd-converter",
+   "description": "some random usb to nvme ssd converter with screen",
+   "url": "https://github.com/gnahiak2/some-random-usb-to-nvme-ssd-converter",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-06-27T09:56:26Z",
+   "pushedAt": "2026-06-28T07:38:43Z",
+   "languages": [],
+   "readme": [
+    {
+     "t": "h",
+     "text": "some-random-usb-to-nvme-ssd-converter"
+    },
+    {
+     "t": "p",
+     "text": "some random usb to nvme ssd converter with screen"
+    }
+   ]
+  },
+  {
+   "name": "HSCore",
+   "description": "Fabric Mod for #hacksteal in Hack club slack",
+   "url": "https://github.com/gnahiak2/HSCore",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-06-25T05:26:46Z",
+   "pushedAt": "2026-06-27T07:42:09Z",
+   "languages": [],
+   "readme": []
+  },
+  {
+   "name": "last-ride",
+   "description": "",
+   "url": "https://github.com/gnahiak2/last-ride",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "GDScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-06-05T06:37:30Z",
+   "pushedAt": "2026-06-09T07:26:27Z",
+   "languages": [
+    [
+     "GDScript",
+     100,
+     "#355570"
+    ]
+   ],
+   "readme": []
+  },
+  {
+   "name": "esp32-serprog",
+   "description": "flashrom/serprog SPI programmer implementation for esp32 family",
+   "url": "https://github.com/gnahiak2/esp32-serprog",
+   "homepage": "",
+   "fork": true,
+   "archived": false,
+   "language": "C",
+   "stars": 0,
+   "forks": 0,
+   "license": "GPL-3.0",
+   "topics": [],
+   "createdAt": "2026-06-04T12:27:37Z",
+   "pushedAt": "2026-06-04T15:16:32Z"
+  },
+  {
+   "name": "esp32-s3-wroom-2-devkit",
+   "description": "",
+   "url": "https://github.com/gnahiak2/esp32-s3-wroom-2-devkit",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-05-31T07:37:01Z",
+   "pushedAt": "2026-05-31T09:48:14Z",
+   "languages": [],
+   "readme": [
+    {
+     "t": "h",
+     "text": "esp32-s3-wroom-2-devkit"
+    }
+   ]
+  },
+  {
+   "name": "esp32s3-qspi-flasher",
+   "description": "A spi flasher",
+   "url": "https://github.com/gnahiak2/esp32s3-qspi-flasher",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "C",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-05-24T09:21:15Z",
+   "pushedAt": "2026-05-25T09:57:57Z",
+   "languages": [
+    [
+     "C",
+     71.1,
+     "#555555"
+    ],
+    [
+     "CMake",
+     17.9,
+     "#DA3434"
+    ],
+    [
+     "Dockerfile",
+     11,
+     "#384d54"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "esp32s3-qspi-flasher"
+    },
+    {
+     "t": "p",
+     "text": "A spi flasher"
+    }
+   ]
+  },
+  {
+   "name": "dinosaurs",
+   "description": "🦕 A collection of Orpheus (Hack Club's mascot) drawings! Look at them at rawr.hackclub.com :)",
+   "url": "https://github.com/gnahiak2/dinosaurs",
+   "homepage": "https://hack.af/draw-dino",
+   "fork": true,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-01-26T01:25:38Z",
+   "pushedAt": "2026-04-30T15:50:45Z"
+  },
+  {
+   "name": "lifesim",
+   "description": "A lifesim",
+   "url": "https://github.com/gnahiak2/lifesim",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Rust",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-04-21T09:44:03Z",
+   "pushedAt": "2026-04-25T10:20:30Z",
+   "languages": [
+    [
+     "Rust",
+     100,
+     "#dea584"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "LifeSim CLI"
+    },
+    {
+     "t": "p",
+     "text": "A simple command-line life simulation game written in Rust. You start at age 0 and make choices each year that affect your stats until the game ends."
+    },
+    {
+     "t": "h",
+     "text": "Features"
+    },
+    {
+     "t": "li",
+     "text": "Start from age 0"
+    },
+    {
+     "t": "li",
+     "text": "Year-by-year decision system"
+    },
+    {
+     "t": "li",
+     "text": "Player stats:"
+    },
+    {
+     "t": "li",
+     "text": "Health"
+    },
+    {
+     "t": "li",
+     "text": "Happiness"
+    },
+    {
+     "t": "li",
+     "text": "Money"
+    },
+    {
+     "t": "li",
+     "text": "Actions:"
+    },
+    {
+     "t": "li",
+     "text": "Study"
+    },
+    {
+     "t": "li",
+     "text": "Work"
+    },
+    {
+     "t": "li",
+     "text": "Party"
+    },
+    {
+     "t": "li",
+     "text": "Gym"
+    },
+    {
+     "t": "li",
+     "text": "Do nothing"
+    },
+    {
+     "t": "li",
+     "text": "Random events (money gain, sickness)"
+    }
+   ]
+  },
+  {
+   "name": "Cooked",
+   "description": "You were never meant to cook this.",
+   "url": "https://github.com/gnahiak2/Cooked",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "JavaScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-01-26T08:32:05Z",
+   "pushedAt": "2026-04-15T08:02:55Z",
+   "languages": [
+    [
+     "JavaScript",
+     82.1,
+     "#f1e05a"
+    ],
+    [
+     "CSS",
+     12.5,
+     "#663399"
+    ],
+    [
+     "HTML",
+     5.4,
+     "#e34c26"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "🍳 Cooked"
+    },
+    {
+     "t": "p",
+     "text": "You were never meant to cook this."
+    },
+    {
+     "t": "p",
+     "text": "Cooked is a cursed AI web app that generates fake, unhinged dishes and AI-generated images of them. It exists somewhere between a joke, a demo, and a crime against food."
+    },
+    {
+     "t": "p",
+     "text": "Built with a static frontend and a Cloudflare Worker backend to safely proxy AI requests without exposing API keys."
+    },
+    {
+     "t": "h",
+     "text": "✨ Features"
+    },
+    {
+     "t": "li",
+     "text": "🤖 AI-generated fictional dishes (text)"
+    },
+    {
+     "t": "li",
+     "text": "🖼️ AI-generated images of cursed food"
+    },
+    {
+     "t": "li",
+     "text": "🔁 “MAKE IT WORSE” button for iterative chaos"
+    },
+    {
+     "t": "li",
+     "text": "🔐 API key kept server-side (no frontend leaks)"
+    },
+    {
+     "t": "li",
+     "text": "🚫 No CORS issues, no browser errors"
+    },
+    {
+     "t": "li",
+     "text": "⚡ Fast, serverless, zero build step"
+    },
+    {
+     "t": "h",
+     "text": "🧠 Architecture"
+    },
+    {
+     "t": "p",
+     "text": "Browser (HTML / CSS / JS) ↓ Cloudflare Worker (API proxy) ↓ HackAI (Text + Image models)"
+    },
+    {
+     "t": "h",
+     "text": "Why this setup?"
+    },
+    {
+     "t": "li",
+     "text": "Browsers block direct AI API calls (CORS)"
+    },
+    {
+     "t": "li",
+     "text": "API keys should never live in frontend code"
+    }
+   ]
+  },
+  {
+   "name": "usbhub",
+   "description": "",
+   "url": "https://github.com/gnahiak2/usbhub",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-04-03T10:42:58Z",
+   "pushedAt": "2026-04-03T10:42:59Z",
+   "languages": [],
+   "readme": []
+  },
+  {
+   "name": "USB-3.0-Header-to-USB-C-Adapter",
+   "description": "",
+   "url": "https://github.com/gnahiak2/USB-3.0-Header-to-USB-C-Adapter",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-02-21T13:18:37Z",
+   "pushedAt": "2026-02-24T10:16:25Z",
+   "languages": [],
+   "readme": [
+    {
+     "t": "h",
+     "text": "USB-3.0-Header-to-USB-C-Adapter"
+    }
+   ]
+  },
+  {
+   "name": "USB_Type_E_Female_KiCAD",
+   "description": "",
+   "url": "https://github.com/gnahiak2/USB_Type_E_Female_KiCAD",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-02-24T00:05:57Z",
+   "pushedAt": "2026-02-24T01:18:12Z",
+   "languages": [],
+   "readme": [
+    {
+     "t": "h",
+     "text": "USB_Type_E_Female_KiCAD"
+    }
+   ]
+  },
+  {
+   "name": "campfire-singapore",
+   "description": "The website for campfire singapore",
+   "url": "https://github.com/gnahiak2/campfire-singapore",
+   "homepage": "https://campfire-singapore.vercel.app",
+   "fork": true,
+   "archived": false,
+   "language": "TypeScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-02-16T08:08:26Z",
+   "pushedAt": "2026-02-19T10:33:42Z"
+  },
+  {
+   "name": "fixmyfps",
+   "description": "",
+   "url": "https://github.com/gnahiak2/fixmyfps",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "HTML",
+   "stars": 2,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-01-28T13:37:17Z",
+   "pushedAt": "2026-01-30T06:57:38Z",
+   "languages": [
+    [
+     "HTML",
+     85.8,
+     "#e34c26"
+    ],
+    [
+     "CSS",
+     14.2,
+     "#663399"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "FixMyFPS"
+    },
+    {
+     "t": "p",
+     "text": "Fix FPS drops, stutters, and lag on low-end PCs. No sketchy “boosters”. No placebo tweaks. Just real fixes."
+    },
+    {
+     "t": "p",
+     "text": "Built for:"
+    },
+    {
+     "t": "li",
+     "text": "Windows users"
+    },
+    {
+     "t": "li",
+     "text": "Low-end / Intel iGPU PCs"
+    },
+    {
+     "t": "li",
+     "text": "Gamers who just want their FPS back"
+    },
+    {
+     "t": "h",
+     "text": "🚀 What this is"
+    },
+    {
+     "t": "p",
+     "text": "FixMyFPS is a static website that publishes:"
+    },
+    {
+     "t": "li",
+     "text": "Troubleshooting guides (FPS drops, stutter, lag)"
+    },
+    {
+     "t": "li",
+     "text": "Windows performance tweaks"
+    },
+    {
+     "t": "li",
+     "text": "Intel iGPU gaming settings"
+    },
+    {
+     "t": "li",
+     "text": "Simple tools (RAM checks, FPS sanity checks)"
+    },
+    {
+     "t": "p",
+     "text": "The goal is simple: help people fix performance issues without downloading malware."
+    },
+    {
+     "t": "h",
+     "text": "🛠️ Tech Stack"
+    },
+    {
+     "t": "li",
+     "text": "HTML / CSS / JavaScript (static)"
+    },
+    {
+     "t": "li",
+     "text": "Hosted on Cloudflare Pages"
+    }
+   ]
+  },
+  {
+   "name": "mom-swebsite",
+   "description": "",
+   "url": "https://github.com/gnahiak2/mom-swebsite",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "HTML",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-01-25T07:38:25Z",
+   "pushedAt": "2026-01-25T08:48:03Z",
+   "languages": [
+    [
+     "HTML",
+     100,
+     "#e34c26"
+    ]
+   ],
+   "readme": []
+  },
+  {
+   "name": "rickroll",
+   "description": "Who knows?",
+   "url": "https://github.com/gnahiak2/rickroll",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "JavaScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-01-23T08:15:07Z",
+   "pushedAt": "2026-01-25T07:31:45Z",
+   "languages": [
+    [
+     "JavaScript",
+     69.7,
+     "#f1e05a"
+    ],
+    [
+     "HTML",
+     22.1,
+     "#e34c26"
+    ],
+    [
+     "CSS",
+     8.2,
+     "#663399"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "rickroll"
+    },
+    {
+     "t": "p",
+     "text": "Who knows?"
+    }
+   ]
+  },
+  {
+   "name": "website",
+   "description": "",
+   "url": "https://github.com/gnahiak2/website",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "HTML",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2026-01-23T01:59:25Z",
+   "pushedAt": "2026-01-23T03:29:53Z",
+   "languages": [
+    [
+     "HTML",
+     97.2,
+     "#e34c26"
+    ],
+    [
+     "CSS",
+     2.8,
+     "#663399"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "website"
+    }
+   ]
+  },
+  {
+   "name": "explosivegf-serverside",
+   "description": "Want an explanation for a project on Github? You got it! ... but not with snide remarks!",
+   "url": "https://github.com/gnahiak2/explosivegf-serverside",
+   "homepage": "",
+   "fork": true,
+   "archived": false,
+   "language": "Python",
+   "stars": 1,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-01-17T13:07:43Z",
+   "pushedAt": "2026-01-17T23:40:53Z"
+  },
+  {
+   "name": "explosivegf-server",
+   "description": "",
+   "url": "https://github.com/gnahiak2/explosivegf-server",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "Python",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2026-01-17T13:11:00Z",
+   "pushedAt": "2026-01-17T13:33:38Z",
+   "languages": [
+    [
+     "Python",
+     100,
+     "#3572A5"
+    ]
+   ],
+   "readme": []
+  },
+  {
+   "name": "chromebook-linux-audio-for-chubuntu",
+   "description": "Script that enables audio support on many Chrome devices running various Linux distros",
+   "url": "https://github.com/gnahiak2/chromebook-linux-audio-for-chubuntu",
+   "homepage": "",
+   "fork": true,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "BSD-3-Clause",
+   "topics": [],
+   "createdAt": "2026-02-13T02:39:24Z",
+   "pushedAt": "2026-01-09T16:54:20Z"
+  },
+  {
+   "name": "BE-A-HACKER-TO-PROVE-MUM-WRONG",
+   "description": "roblox game",
+   "url": "https://github.com/gnahiak2/BE-A-HACKER-TO-PROVE-MUM-WRONG",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2025-12-16T12:05:47Z",
+   "pushedAt": "2025-12-17T05:06:43Z",
+   "languages": [],
+   "readme": [
+    {
+     "t": "h",
+     "text": "BE-A-HACKER-TO-PROVE-MUM-WRONG"
+    },
+    {
+     "t": "p",
+     "text": "roblox game"
+    }
+   ]
+  },
+  {
+   "name": "DFPlayerKiCAD-Symbol-and-footprints",
+   "description": "",
+   "url": "https://github.com/gnahiak2/DFPlayerKiCAD-Symbol-and-footprints",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "Unlicense",
+   "topics": [],
+   "createdAt": "2025-11-19T02:04:18Z",
+   "pushedAt": "2025-11-19T02:07:11Z",
+   "languages": [],
+   "readme": [
+    {
+     "t": "p",
+     "text": "Well its there up there"
+    },
+    {
+     "t": "p",
+     "text": "Tutorial to install footprints https://www.youtube.com/watch?v=W9cLnIjvybo"
+    }
+   ]
+  },
+  {
+   "name": "somethingthatimadeforpathfinderfromhackclub",
+   "description": "",
+   "url": "https://github.com/gnahiak2/somethingthatimadeforpathfinderfromhackclub",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "C++",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2025-11-01T00:44:27Z",
+   "pushedAt": "2025-11-01T02:05:21Z",
+   "languages": [
+    [
+     "C++",
+     100,
+     "#f34b7d"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "somethingthatimadeforpathfinderfromhackclub"
+    },
+    {
+     "t": "h",
+     "text": "pathfinder session 1 - [16 mins] (yes im that fast)"
+    },
+    {
+     "t": "p",
+     "text": "What I did: I finished the entire pcb."
+    },
+    {
+     "t": "p",
+     "text": "Screenshot"
+    },
+    {
+     "t": "h",
+     "text": "session 2 - [2m]"
+    },
+    {
+     "t": "p",
+     "text": "what i did added the key3d models"
+    }
+   ]
+  },
+  {
+   "name": "ReactionTimeGamePCB",
+   "description": "A pcb",
+   "url": "https://github.com/gnahiak2/ReactionTimeGamePCB",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2025-10-18T01:25:25Z",
+   "pushedAt": "2025-10-18T01:25:26Z",
+   "languages": [],
+   "readme": [
+    {
+     "t": "h",
+     "text": "ReactionTimeGamePCB"
+    },
+    {
+     "t": "p",
+     "text": "A pcb"
+    }
+   ]
+  },
+  {
+   "name": "Useless-LED-Chaos",
+   "description": "Totally useless Arduino LED chaos – pins 2,3,4 blink randomly while the built-in LED goes rogue. Serial monitor screams nonsense. Maximum chaos, zero purpose. Public domain, do whatever you want ;)",
+   "url": "https://github.com/gnahiak2/Useless-LED-Chaos",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "C++",
+   "stars": 0,
+   "forks": 0,
+   "license": "Unlicense",
+   "topics": [],
+   "createdAt": "2025-09-13T08:19:18Z",
+   "pushedAt": "2025-09-14T11:58:57Z",
+   "languages": [
+    [
+     "C++",
+     100,
+     "#f34b7d"
+    ]
+   ],
+   "readme": [
+    {
+     "t": "h",
+     "text": "Useless LED Chaos 💀🌈🤡"
+    },
+    {
+     "t": "p",
+     "text": "Welcome to the most pointless Arduino project you'll ever see. Seriously. Pins 2, 3, 4 blink randomly while the built-in LED on pin 13 decides to do its own chaotic thing. The serial monitor endlessly screams nonsense. If you were looking for purpose… you’re out of luck 😎🫠."
+    },
+    {
+     "t": "h",
+     "text": "Features"
+    },
+    {
+     "t": "li",
+     "text": "Pins 2, 3, 4 blink randomly with absolutely no pattern."
+    },
+    {
+     "t": "li",
+     "text": "Built-in LED on pin 13 joins the chaos independently."
+    },
+    {
+     "t": "li",
+     "text": "Serial monitor spams \"I am useless 🫠💀\" forever."
+    },
+    {
+     "t": "li",
+     "text": "Fully public domain, because why not? Spread the chaos! 🔥"
+    },
+    {
+     "t": "h",
+     "text": "Requirements"
+    },
+    {
+     "t": "li",
+     "text": "Arduino Uno (clones totally fine)"
+    },
+    {
+     "t": "li",
+     "text": "USB cable (avoid cheap power-only cables, they’re evil)"
+    },
+    {
+     "t": "li",
+     "text": "Arduino IDE installed on your computer"
+    },
+    {
+     "t": "h",
+     "text": "Usage"
+    },
+    {
+     "t": "li",
+     "text": "Plug in your Uno."
+    },
+    {
+     "t": "li",
+     "text": "Open Arduino IDE."
+    },
+    {
+     "t": "li",
+     "text": "Open useless_led_chaos.ino."
+    },
+    {
+     "t": "li",
+     "text": "Select Board → Arduino Uno."
+    }
+   ]
+  },
+  {
+   "name": "sh1mmer",
+   "description": "source tree, website, and writeup for the  sh1mmer chromebook jailbreak",
+   "url": "https://github.com/gnahiak2/sh1mmer",
+   "homepage": "https://sh1mmer.me",
+   "fork": true,
+   "archived": false,
+   "language": "Python",
+   "stars": 0,
+   "forks": 0,
+   "license": "GPL-3.0",
+   "topics": [],
+   "createdAt": "2025-08-07T04:16:31Z",
+   "pushedAt": "2025-08-14T04:29:47Z"
+  },
+  {
+   "name": "Ultraviolet-App",
+   "description": "Example application of Ultraviolet which can be deployed in production.",
+   "url": "https://github.com/gnahiak2/Ultraviolet-App",
+   "homepage": "https://docs.titaniumnetwork.org/proxies/ultraviolet",
+   "fork": true,
+   "archived": false,
+   "language": "JavaScript",
+   "stars": 0,
+   "forks": 0,
+   "license": "AGPL-3.0",
+   "topics": [],
+   "createdAt": "2025-07-21T02:22:53Z",
+   "pushedAt": "2025-07-21T03:14:25Z"
+  },
+  {
+   "name": "HI",
+   "description": "",
+   "url": "https://github.com/gnahiak2/HI",
+   "homepage": "",
+   "fork": false,
+   "archived": false,
+   "language": "HTML",
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "topics": [],
+   "createdAt": "2025-02-28T02:39:56Z",
+   "pushedAt": "2025-02-28T02:53:31Z",
+   "languages": [
+    [
+     "HTML",
+     100,
+     "#e34c26"
+    ]
+   ],
+   "readme": []
+  },
+  {
+   "name": "eaglercraft",
+   "description": "",
+   "url": "https://github.com/gnahiak2/eaglercraft",
+   "homepage": "",
+   "fork": true,
+   "archived": false,
+   "language": "",
+   "stars": 0,
+   "forks": 0,
+   "license": "",
+   "topics": [],
+   "createdAt": "2025-08-01T04:31:22Z",
+   "pushedAt": "2022-11-10T23:29:47Z"
+  }
+ ],
+ "pulls": [
+  {
+   "title": "Feat: 32 character nick limit",
+   "repo": "hackclub/HCCore",
+   "stars": 34,
+   "state": "open",
+   "url": "https://github.com/hackclub/HCCore/pull/202",
+   "date": "2026-09-12"
+  },
+  {
+   "title": "Adding `hacksteal.hackclub.community`",
+   "repo": "hackclub/dns",
+   "stars": 229,
+   "state": "merged",
+   "url": "https://github.com/hackclub/dns/pull/3050",
+   "date": "2026-06-23"
+  },
+  {
+   "title": "Add link to parents guide",
+   "repo": "aaabattery650/campfire-singapore",
+   "stars": 0,
+   "state": "open",
+   "url": "https://github.com/aaabattery650/campfire-singapore/pull/5",
+   "date": "2026-02-19"
+  },
+  {
+   "title": "Gnahiak2   dino",
+   "repo": "hackclub/dinosaurs",
+   "stars": 1140,
+   "state": "merged",
+   "url": "https://github.com/hackclub/dinosaurs/pull/1378",
+   "date": "2026-01-26"
+  }
+ ]
+}
